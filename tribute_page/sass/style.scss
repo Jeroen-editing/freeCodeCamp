@@ -1,0 +1,150 @@
+$base_color: rgb(243, 231, 190);
+$text_color: rgb(50,50,50);
+
+$main_font: 'Nunito';
+$second_font:'MuseoModerno';
+
+* {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+body, header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main_title, .sub_title {
+    margin: 20px auto;
+    padding: 18px 0;
+    color: $text_color;
+    font-family: $main_font, sans-serif;
+    text-align: center;
+    background: rgba($base_color, 0.28);
+
+    h1, h2 {
+        padding: 15px 0;
+    }
+
+    h1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    h3 {
+        padding: 20px 0;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    h4 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+.main_photo {
+    display: block;
+    width: 100%;
+    margin-top: 48px;
+
+    #img, figcaption {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+    #img {
+        padding: 8px 0;
+        border-top: 1px solid rgba($text_color, 0.4);
+        border-bottom: 1px solid rgba($text_color, 0.4);
+    }
+    figcaption {
+        padding: 12px 0 4px 0;
+        color: $text_color;
+        font-family: $second_font;
+        font-size: 15px;
+        font-weight: 200;
+        text-align: center;
+    }
+}
+
+section {
+    background: rgba($base_color, 0.24);
+}
+
+#tribute-info {
+    width: 100%; 
+
+    .achieveList {
+        width: 32%;
+        margin: 0 auto;
+    }
+}
+    
+.achieveList {
+    ul {
+        padding: 18px 0 22px 0;
+        list-style: url("../assets/square_light.png");
+
+        li {
+            padding: 16px 0;
+        }
+
+        li h5, li p {
+            display: inline;
+            font-family: $main_font;
+        }
+        li h5 {
+            margin-right: 8px;
+            color: #3f687e;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        li p {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}
+
+.listFooter {
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 0;
+    background: rgba($base_color, 0.4);
+
+    .quoteBox {
+        width: 32%;
+        margin: 0 auto;
+
+        .quote, .quoteAuthor {
+            padding: 14px 0;
+            font-style: italic;
+            font-family: $second_font;
+        }
+        .quote {
+            border-bottom: 1px solid rgba($text_color, 0.4);
+        }
+    }
+}
+
+
+footer {
+    width: 100%;
+    padding: 26px 0 16px 0;
+    background: rgba($base_color, 0.28);
+
+    h5 {
+        width: 60%;
+        margin: 0 auto;
+        color: $text_color;
+        font-family: $main_font;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+
+        a {
+            color: rgb(79, 128, 201);
+            font-family: $main_font;
+        }
+    }
+}

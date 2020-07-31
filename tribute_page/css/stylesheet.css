@@ -1,0 +1,108 @@
+* {
+  margin: 0 0;
+  padding: 0 0; }
+
+body, header {
+  width: 100%;
+  margin: 0 auto; }
+
+.main_title, .sub_title {
+  margin: 20px auto;
+  padding: 18px 0;
+  color: #323232;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  background: rgba(243, 231, 190, 0.28); }
+  .main_title h1, .main_title h2, .sub_title h1, .sub_title h2 {
+    padding: 15px 0; }
+  .main_title h1, .sub_title h1 {
+    font-size: 36px;
+    font-weight: 600; }
+  .main_title h3, .sub_title h3 {
+    padding: 20px 0;
+    font-size: 22px;
+    font-weight: 700; }
+  .main_title h4, .sub_title h4 {
+    font-size: 16px;
+    font-weight: 300; }
+
+.main_photo {
+  display: block;
+  width: 100%;
+  margin-top: 48px; }
+  .main_photo #img, .main_photo figcaption {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto; }
+  .main_photo #img {
+    padding: 8px 0;
+    border-top: 1px solid rgba(50, 50, 50, 0.4);
+    border-bottom: 1px solid rgba(50, 50, 50, 0.4); }
+  .main_photo figcaption {
+    padding: 12px 0 4px 0;
+    color: #323232;
+    font-family: "MuseoModerno";
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center; }
+
+section {
+  background: rgba(243, 231, 190, 0.24); }
+
+#tribute-info {
+  width: 100%; }
+  #tribute-info .achieveList {
+    width: 32%;
+    margin: 0 auto; }
+
+.achieveList ul {
+  padding: 18px 0 22px 0;
+  list-style: url("../assets/square_light.png"); }
+  .achieveList ul li {
+    padding: 16px 0; }
+  .achieveList ul li h5, .achieveList ul li p {
+    display: inline;
+    font-family: "Nunito"; }
+  .achieveList ul li h5 {
+    margin-right: 8px;
+    color: #3f687e;
+    font-size: 18px;
+    font-weight: 700; }
+  .achieveList ul li p {
+    font-size: 16px;
+    font-weight: 500; }
+
+.listFooter {
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 0;
+  background: rgba(243, 231, 190, 0.4); }
+  .listFooter .quoteBox {
+    width: 32%;
+    margin: 0 auto; }
+    .listFooter .quoteBox .quote, .listFooter .quoteBox .quoteAuthor {
+      padding: 14px 0;
+      font-style: italic;
+      font-family: "MuseoModerno"; }
+    .listFooter .quoteBox .quote {
+      border-bottom: 1px solid rgba(50, 50, 50, 0.4); }
+
+footer {
+  width: 100%;
+  padding: 26px 0 16px 0;
+  background: rgba(243, 231, 190, 0.28); }
+  footer h5 {
+    width: 60%;
+    margin: 0 auto;
+    color: #323232;
+    font-family: "Nunito";
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700; }
+    footer h5 a {
+      color: #4f80c9;
+      font-family: "Nunito"; }
+
+/*# sourceMappingURL=stylesheet.css.map */

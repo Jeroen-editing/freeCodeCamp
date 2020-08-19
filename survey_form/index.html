@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1 class="page_title" id="title">
+            <span>0</span>pen - <span>S</span>ource - <span>C</span>oders&nbsp;
+            <img src="assets/icons/live.png" alt="" height="42" width="42">
+            &nbsp;<span>S</span>urvey - <span>f</span>orm
+        </h1>
+        <h4 class="page_description" id="description">Thank you for taking the time to help us improve the platform </h4>
+    </header>
+    <main>
+        <form action="" class="survey_form" id="survey-form">
+            <fieldset>
+                <label for="name" class="main_label" id="name-label">Name</label>
+                    <input type="text" class="name_input" id="name">
+
+                <label for="email" class="main_label" id="email-label">Email</label>
+                    <input type="text" class="email_input" id="email">
+
+                <label for="number" class="main_label" id="number-label">Age <span>(optional)</span></label>
+                    <input type="number" class="age_input" id="number" min="0" max="110">
+
+                <label for="dropdown" class="main_label">Which option best describes your current role?</label>
+                    <select name="" id="dropdown">
+                        <option value="">Select your current role</option>
+                        <option value="">Student</option>
+                        <option value="">Full time job</option>
+                        <option value="">Full time learner</option>
+                        <option value="">Prefer not to say</option>
+                        <option value="">Other</option>
+                    </select>
+            </fieldset>         
+
+            <fieldset>
+                <h3 for="" class="main_label">Would you recommend Open - Source coding to a friend?</h3>
+                <ul>
+                    <li>
+                        <input type="radio" name="recemondation" id="definitely" value="yes" checked>
+                        <label for="definitely" class="sub_label"">Definitely</label>
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                        <input type="radio" name="recemondation" id="maybe" value="maybe">
+                        <label for="maybe" class="sub_label">Maybe</label>
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+                    <li>
+                        <input type="radio" name="recemondation" id="notsure">
+                        <label for="notsure" class="sub_label" value="no">Not sure</label>
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+                </ul>
+            </fieldset>
+            
+
+            <fieldset>
+                <label for="dropdown-two" class="main_label">What is your favorite feature for coding?</label>
+                    <select name="" id="dropdown-two">
+                        <option value="">Select your favorite feature</option>
+                        <option value="">Challenges</option>
+                        <option value="">Projects</option>
+                        <option value="">Commercial</option>
+                        <option value="">Community</option>
+                        <option value="">Open source</option>
+                    </select>
+                
+                <label for="" class="main_label">What would you like to see improved? <span>(Check all that apply)</span></label>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="improvement" id="frontend" value="frontend" checked>
+                            <label for="frontend" class="sub_label">Front-end Projects</label>
+                        </li>                        
+                        <li>
+                            <input type="checkbox" name="improvement" id="backend" value="backend">
+                            <label for="backend" class="sub_label">Back-end Projects</label>
+                        </li>                        
+                        <li>                
+                            <input type="checkbox" name="improvement" id="data" value="data">
+                            <label for="data" class="sub_label">Data Visualization</label>
+                        </li>                        
+                        <li>
+                            <input type="checkbox" name="improvement" id="challenge" value="challenge">
+                            <label for="challenge" class="sub_label">Challenges</label>
+                        </li>                        
+                        <li>
+                            <input type="checkbox" name="improvement" id="opensource" value="opensource">
+                            <label for="opensource" class="sub_label">Open Source Community</label>
+                        </li>                        
+                        <li>
+                            <input type="checkbox" name="improvement" id="help" value="help">
+                            <label for="help" class="sub_label">Help rooms</label>
+                        </li>                        
+                        <li>
+                            <input type="checkbox" name="improvement" id="video" value="video">
+                            <label for="video" class="sub_label">Videos</label>
+                        </li>                        
+                        <li>
+                            <input type="checkbox" name="improvement" id="meetups" value="meetups">
+                            <label for="meetups" class="sub_label">Local Meetups</label>
+                        </li>                        
+                        <li>
+                            <input type="checkbox" name="improvement" id="wiki" value="wiki">
+                            <label for="wiki" class="sub_label">Wiki</label>
+                        </li>                        
+                        <li>
+                            <input type="checkbox" name="improvement" id="forum" value="forum">
+                            <label for="forum" class="sub_label">Forum</label>
+                        </li>                        
+                        <li>
+                            <input type="checkbox" name="improvement" id="coach" value="coach">
+                            <label for="coach" class="sub_label">Additional coaching</label>
+                        </li>   
+                    </ul>
+            </fieldset>         
+
+            <fieldset class="button_field">
+                <input type="submit" class="submit" id="submit" value="Submit"></button>
+            </fieldset>
+
+            <fieldset>
+                <label for="" class="main_label">Comments, questions or suggestions?</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea> 
+            </fieldset>
+            
+            
+            
+        </form>
+    </main>
+</body>
+</html>

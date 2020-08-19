@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: url(../assets/img/dark_pc_2b.jpg) black no-repeat;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif; }
+
+header {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 24px;
+  background: rgba(0, 0, 0, 0.6); }
+  header h1, header h4 {
+    color: whitesmoke;
+    text-align: center; }
+  header h1 {
+    font-size: 33px;
+    font-weight: 600;
+    text-align: center; }
+    header h1 span {
+      font-size: 42px;
+      font-weight: 500; }
+    header h1 img {
+      margin: 0 2px;
+      padding: 2px 2px;
+      background: whitesmoke;
+      border-radius: 50%;
+      transform: translateY(10px);
+      box-shadow: 0 0 10px #f5f5f5, 0 0 13px rgba(222, 222, 222, 0.7), 0 0 16px rgba(199, 199, 199, 0.5), 0 0 19px rgba(174, 173, 173, 0.2); }
+  header h4 {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px; }
+
+main {
+  width: 720px;
+  margin: 0 auto;
+  padding: 18px 40px;
+  background: rgba(0, 0, 0, 0.6); }
+  main form {
+    margin: 0 auto;
+    padding: 30px 30px;
+    background: rgba(19, 42, 57, 0.6);
+    border: 1px solid rgba(42, 118, 128, 0.2);
+    border-radius: 4px; }
+    main form fieldset {
+      margin-bottom: 20px;
+      padding: 0 20px 30px 20px;
+      background: linear-gradient(45deg, rgba(255, 255, 255, 0.06) 0%, rgba(42, 118, 128, 0.26) 30%, rgba(67, 179, 194, 0.26) 70%, rgba(255, 255, 255, 0.06) 100%);
+      border: 1px solid rgba(42, 118, 128, 0.2);
+      border-radius: 4px; }
+      main form fieldset .main_label,
+      main form fieldset .sub_label {
+        display: block;
+        font-family: 'Montserrat Alternates', sans-serif;
+        text-shadow: 0 0 2px #282828; }
+      main form fieldset .main_label {
+        margin: 30px 0 10px 0;
+        color: #4e83c1;
+        font-size: 20px;
+        font-weight: 500;
+        font-style: italic; }
+        main form fieldset .main_label span {
+          font-size: 18px; }
+      main form fieldset .sub_label {
+        display: inline-block;
+        width: 100%;
+        height: 24px;
+        margin-top: 2px;
+        padding: 0 0 0 12px;
+        color: #d1c7bb;
+        font-size: 16px;
+        font-weight: 400; }
+      main form fieldset input[type=text],
+      main form fieldset input[type=number],
+      main form fieldset textarea {
+        display: block;
+        width: 97.8%;
+        padding: 0 0 0 8px;
+        font-size: 14px;
+        background: #d1c7bb;
+        border: 2px solid rgba(62, 161, 62, 0);
+        border-radius: 3px; }
+        main form fieldset input[type=text]:focus, main form fieldset input[type=text]:hover,
+        main form fieldset input[type=number]:focus,
+        main form fieldset input[type=number]:hover,
+        main form fieldset textarea:focus,
+        main form fieldset textarea:hover {
+          color: #61a761;
+          background: white;
+          outline: none;
+          border: 2px solid #3ea13e; }
+      main form fieldset input[type=text],
+      main form fieldset input[type=number] {
+        height: 26px; }
+      main form fieldset input[type=radio] {
+        height: 24px;
+        transform: scale(1.25); }
+      main form fieldset input[type=checkbox] {
+        height: 24px;
+        transform: scale(1.5); }
+      main form fieldset select {
+        display: block;
+        width: 100%;
+        height: 30px;
+        padding: 0 0 0 8px;
+        font-size: 14px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background: #d1c7bb;
+        background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+        background-repeat: no-repeat, repeat;
+        background-position: right .7em top 50%, 0 0;
+        background-size: .65em auto, 100%;
+        border: 2px solid rgba(62, 161, 62, 0);
+        border-radius: 3px; }
+        main form fieldset select::-ms-expand {
+          display: none; }
+        main form fieldset select:focus, main form fieldset select:hover {
+          color: #d1c7bb;
+          background: white;
+          background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+          background-repeat: no-repeat, repeat;
+          background-position: right .7em top 50%, 0 0;
+          background-size: .65em auto, 100%;
+          outline: none;
+          border: 2px solid #3ea13e; }
+        main form fieldset select option {
+          padding: 6px 0;
+          font-size: 16px;
+          background: rgba(19, 42, 57, 0.66);
+          border-bottom: 1px solid rgba(42, 118, 128, 0.14);
+          border-radius: 4px; }
+          main form fieldset select option:hover {
+            color: #61a761;
+            background: rgba(42, 118, 128, 0.18);
+            border-bottom: 1px solid rgba(42, 118, 128, 0.14);
+            border-radius: 4px; }
+      main form fieldset ul {
+        list-style: none; }
+      main form fieldset li {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        padding: 4px 0 2px 6px;
+        border-bottom: 1px solid rgba(42, 118, 128, 0.14);
+        border-radius: 4px; }
+        main form fieldset li:hover {
+          background: rgba(42, 118, 128, 0.18); }
+          main form fieldset li:hover .sub_label {
+            color: #61a761; }
+    main form .button_field {
+      padding: 12px 20px; }
+      main form .button_field .submit {
+        width: 100%;
+        height: 40px;
+        padding: 4px 0;
+        color: #d1c7bb;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-shadow: 0 0 2px #282828;
+        background: #4e83c1;
+        border: 1px solid #385f8b;
+        border-radius: 4px;
+        box-shadow: 0 0 2px #282828; }
+        main form .button_field .submit:hover {
+          color: #dad420;
+          background: #307b30;
+          border-color: rgba(218, 212, 32, 0.4); }
+
+/*# sourceMappingURL=stylesheet.css.map */

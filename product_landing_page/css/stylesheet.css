@@ -1,0 +1,396 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: url(../assets/images/laser_show_03b.jpg) no-repeat;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif; }
+
+.nav_header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  top: 0;
+  left: 0;
+  background: rgba(245, 245, 245, 0.75);
+  border-bottom: 1px solid darkslategray; }
+  .nav_header .company {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    text-decoration: none; }
+    .nav_header .company img {
+      height: 36px;
+      padding: 3px 3px;
+      background: rgba(206, 250, 167, 0.2);
+      border-radius: 50%;
+      border: 2px solid darkslategray; }
+    .nav_header .company h2 {
+      margin: 0 0 3px -4px;
+      padding: 6px 8px 6px 12px;
+      color: darkslategray;
+      font-size: 24px;
+      font-weight: 700;
+      text-decoration: none;
+      border-right: 2px solid darkslategray;
+      border-bottom: 2px solid darkslategray;
+      border-bottom-right-radius: 6px; }
+    .nav_header .company:hover img {
+      border-color: #65a400;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4); }
+    .nav_header .company:hover h2 {
+      color: #65a400;
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+      border-color: #65a400;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4); }
+  .nav_header .nav_bar {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 8%; }
+    .nav_header .nav_bar a {
+      color: darkslategray;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 500; }
+      .nav_header .nav_bar a:hover {
+        color: olive;
+        text-decoration: underline;
+        text-underline-offset: 6px; }
+    .nav_header .nav_bar p {
+      color: darkslategray;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 500; }
+
+main {
+  width: 960px;
+  margin: 50px auto;
+  padding-top: 40px; }
+  main header h1 {
+    padding-bottom: 12px;
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 0 0 2px black;
+    letter-spacing: 1px;
+    word-spacing: 4px; }
+  main form {
+    width: 240px;
+    margin: 0 auto;
+    padding: 12px 0;
+    margin-bottom: 80px; }
+    main form input {
+      display: block;
+      border: 1px solid gray; }
+    main form input[type=email] {
+      width: 232px;
+      height: 26px;
+      margin-bottom: 16px;
+      padding-left: 8px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 4px; }
+    main form input[type=submit] {
+      width: 111px;
+      height: 33px;
+      margin: 0 auto;
+      color: whitesmoke;
+      font-size: 16px;
+      text-transform: capitalize;
+      text-shadow: 0 0 1px black;
+      letter-spacing: 2px;
+      background: linear-gradient(180deg, #7070f5 0%, #6666df 10%, #6363d6 40%, #6363d6 60%, #6666dd 90%, #7070f5 100%);
+      border-color: #5454b8;
+      border-radius: 2px; }
+      main form input[type=submit]:hover {
+        color: #ffdf8f;
+        background: #4caa1d;
+        border-color: #4c7414; }
+  main .garantee_box,
+  main .video_box,
+  main .player_card,
+  main .rent_box {
+    margin: 60px auto;
+    background: rgba(255, 255, 255, 0.68);
+    border: 1px solid rgba(47, 79, 79, 0.6);
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(36, 36, 36, 0.2); }
+  main .garantee_box {
+    display: block;
+    width: 800px;
+    margin-bottom: 100px;
+    padding: 42px 60px 28px 60px; }
+  main .garantee {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center; }
+    main .garantee .left_col,
+    main .garantee .right_col {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      justify-items: flex-start;
+      align-content: flex-start;
+      align-items: flex-start;
+      padding: 6px 12px 6px 12px; }
+    main .garantee .left_col {
+      width: 60px;
+      margin-top: 14px; }
+    main .garantee .right_col {
+      width: 680px;
+      margin: 10px 0 0 16px; }
+    main .garantee .garantee—icon {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 21px;
+      padding: 12px 12px;
+      background: rgba(214, 203, 77, 0.4);
+      border: 1px solid rgba(47, 79, 79, 0.4);
+      border-radius: 12px; }
+    main .garantee .garantee—title {
+      width: 680px;
+      height: 24px;
+      color: #0a3030;
+      font-size: 22px;
+      font-weight: 600; }
+    main .garantee .garantee—text {
+      grid-area: bottomCol;
+      width: 680px;
+      height: 66px;
+      padding-top: 6px;
+      color: black;
+      font-family: 'Montserrat Alternates', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 18px; }
+  main .video_box {
+    width: 520px;
+    margin: 0 auto;
+    padding: 42px 60px 28px 60px; }
+  main .video_and_cap video {
+    margin: 0 auto;
+    border: 2px solid rgba(128, 189, 189, 0.8);
+    border-radius: 4px; }
+  main .video_and_cap figcaption {
+    margin-top: 6px;
+    color: #1f3838;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 1px; }
+  main .players_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 920px;
+    margin: 80px auto; }
+  main .player_card {
+    width: 280px;
+    height: 480px;
+    padding: 0 0; }
+    main .player_card:hover header img {
+      animation: scalePhoto 1s forwards; }
+    main .player_card header {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    main .player_card header img {
+      width: 240px;
+      margin: 15px 0 14px 0;
+      border: 1px solid rgba(128, 189, 189, 0.6);
+      border-radius: 2px; }
+    main .player_card header h2 {
+      width: 280px;
+      padding: 6px 0 8px 0;
+      font-weight: 500;
+      word-spacing: -2px;
+      text-align: center;
+      background: rgba(214, 203, 77, 0.6);
+      border-top: 2px solid rgba(128, 189, 189, 0.6);
+      border-bottom: 2px solid rgba(128, 189, 189, 0.6); }
+    main .player_card section {
+      padding: 12px 12px;
+      text-align: center; }
+    main .player_card section h3 {
+      margin-bottom: 12px;
+      font-family: 'Montserrat Alternates', sans-serif;
+      font-size: 22px;
+      font-weight: 500; }
+    main .player_card section P {
+      padding: 4px 6px; }
+    main .player_card .select_footer {
+      width: 100%;
+      bottom: 0; }
+    main .player_card .select_footer button {
+      width: 100%;
+      height: 40px;
+      padding: 8px 0;
+      color: whitesmoke;
+      font-size: 18px;
+      text-shadow: 0 0 1px black;
+      letter-spacing: 2px;
+      background: linear-gradient(180deg, rgba(112, 112, 245, 0.8) 0%, rgba(102, 102, 223, 0.8) 10%, rgba(99, 99, 214, 0.8) 40%, #6363d6 60%, #6666dd 90%, rgba(112, 112, 245, 0.8) 100%);
+      border-top: 1px solid #5454b8;
+      border-radius: 2px;
+      border: none;
+      border-radius: 0px; }
+      main .player_card .select_footer button:hover {
+        color: #ffdf8f;
+        background: #4caa1d;
+        border-top-color: #38550f; }
+  main .rent_box {
+    padding: 42px 60px 28px 60px; }
+    main .rent_box h2 {
+      margin-bottom: 20px;
+      padding: 6px 0 8px 0;
+      color: #0a3030;
+      font-size: 28px;
+      letter-spacing: 1px;
+      word-spacing: 4px;
+      text-align: center;
+      background: rgba(214, 203, 77, 0.6);
+      border: 2px solid rgba(128, 189, 189, 0.6);
+      border-radius: 4px;
+      box-shadow: 1px 1px 2px rgba(36, 36, 36, 0.2); }
+  main .rental {
+    display: block;
+    width: 100%; }
+    main .rental .top_col,
+    main .rental .mid_col,
+    main .rental .bottom_col {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 12px;
+      border-radius: 4px;
+      box-shadow: 1px 1px 2px rgba(36, 36, 36, 0.2); }
+      main .rental .top_col .rent_link,
+      main .rental .mid_col .rent_link,
+      main .rental .bottom_col .rent_link {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 30%;
+        overflow: hidden;
+        text-decoration: none;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px; }
+        main .rental .top_col .rent_link .rent_photo,
+        main .rental .mid_col .rent_link .rent_photo,
+        main .rental .bottom_col .rent_link .rent_photo {
+          width: 96%;
+          padding: 5px 5px;
+          background: rgba(128, 189, 189, 0.6);
+          border-bottom: 1px solid #78b0b0; }
+        main .rental .top_col .rent_link button,
+        main .rental .mid_col .rent_link button,
+        main .rental .bottom_col .rent_link button {
+          width: 100%;
+          height: 40px;
+          padding: 8px 0;
+          color: whitesmoke;
+          font-size: 18px;
+          text-shadow: 0 0 1px black;
+          letter-spacing: 2px;
+          background: linear-gradient(180deg, rgba(128, 189, 189, 0.6) 0%, rgba(115, 175, 175, 0.8) 20%, rgba(106, 168, 168, 0.8) 40%, rgba(106, 168, 168, 0.8) 60%, rgba(115, 175, 175, 0.8) 80%, rgba(128, 189, 189, 0.6) 100%);
+          border: none; }
+        main .rental .top_col .rent_link:hover button,
+        main .rental .mid_col .rent_link:hover button,
+        main .rental .bottom_col .rent_link:hover button {
+          color: #ffdf8f;
+          background: rgba(76, 170, 29, 0.8); }
+        main .rental .top_col .rent_link:hover .rent_photo,
+        main .rental .mid_col .rent_link:hover .rent_photo,
+        main .rental .bottom_col .rent_link:hover .rent_photo {
+          background: rgba(76, 170, 29, 0.8);
+          border-bottom: 1px solid #469c1a; }
+      main .rental .top_col .rent_type,
+      main .rental .mid_col .rent_type,
+      main .rental .bottom_col .rent_type {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 71%;
+        padding: 5px 0 2px 0;
+        background: rgba(255, 255, 255, 0.4);
+        border: 1px solid rgba(128, 189, 189, 0.6);
+        border-left: none;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px; }
+        main .rental .top_col .rent_type .rent_pretitle,
+        main .rental .top_col .rent_type .rent_title,
+        main .rental .top_col .rent_type .rent_subtitle,
+        main .rental .top_col .rent_type .rent_text,
+        main .rental .mid_col .rent_type .rent_pretitle,
+        main .rental .mid_col .rent_type .rent_title,
+        main .rental .mid_col .rent_type .rent_subtitle,
+        main .rental .mid_col .rent_type .rent_text,
+        main .rental .bottom_col .rent_type .rent_pretitle,
+        main .rental .bottom_col .rent_type .rent_title,
+        main .rental .bottom_col .rent_type .rent_subtitle,
+        main .rental .bottom_col .rent_type .rent_text {
+          display: block;
+          padding-bottom: 6px; }
+        main .rental .top_col .rent_type .rent_title,
+        main .rental .mid_col .rent_type .rent_title,
+        main .rental .bottom_col .rent_type .rent_title {
+          padding: 5px 0 7px 16px;
+          color: #0a3030;
+          letter-spacing: 1px;
+          word-spacing: 4px;
+          background: rgba(214, 203, 77, 0.2);
+          border-top: 2px solid rgba(128, 189, 189, 0.6);
+          border-bottom: 2px solid rgba(128, 189, 189, 0.6); }
+        main .rental .top_col .rent_type .rent_pretitle,
+        main .rental .top_col .rent_type .rent_subtitle,
+        main .rental .mid_col .rent_type .rent_pretitle,
+        main .rental .mid_col .rent_type .rent_subtitle,
+        main .rental .bottom_col .rent_type .rent_pretitle,
+        main .rental .bottom_col .rent_type .rent_subtitle {
+          margin-left: 16px;
+          color: #1d2424;
+          letter-spacing: 1px; }
+        main .rental .top_col .rent_type .rent_subtitle,
+        main .rental .mid_col .rent_type .rent_subtitle,
+        main .rental .bottom_col .rent_type .rent_subtitle {
+          padding-top: 10px; }
+        main .rental .top_col .rent_type .rent_text,
+        main .rental .mid_col .rent_type .rent_text,
+        main .rental .bottom_col .rent_type .rent_text {
+          margin-left: 16px;
+          padding-top: 10px; }
+
+.page_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  background: rgba(245, 245, 245, 0.6);
+  border-top: 1px solid darkslategray; }
+  .page_footer .developer,
+  .page_footer .officials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 60px; }
+
+@keyframes scalePhoto {
+  from {
+    scale: 100%; }
+  to {
+    scale: 115.5%; } }
+
+/*# sourceMappingURL=stylesheet.css.map */

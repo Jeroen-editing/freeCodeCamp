@@ -42,6 +42,40 @@ aside {
 main {
   position: absolute;
   width: 80%;
-  left: 300px; }
+  left: 300px;
+  padding: 30px 40px; }
+  main header h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 600; }
+  main .main-section {
+    margin-bottom: 50px; }
+  main .main-section h2 {
+    margin: 20px 0 10px 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 400; }
+  main .main-section p,
+  main .main-section li {
+    font-family: 'Krub', sans-serif;
+    font-size: 16px;
+    font-weight: 400; }
+  main .main-section .text {
+    padding: 12px 20px; }
+  main .main-section ul {
+    margin-left: 60px;
+    list-style: outside; }
+  main .main-section li p {
+    padding: 8px 0; }
+  main .main-section .code-box {
+    margin: 6px 30px;
+    padding: 12px 20px;
+    background: #f4f4f4;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8; }
+    main .main-section .code-box p {
+      margin: 12px 0;
+      font-family: 'Metrophobic', sans-serif;
+      letter-spacing: 1px; }
 
 /*# sourceMappingURL=stylesheet.css.map */

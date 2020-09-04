@@ -6,7 +6,7 @@
     <title>JavaScript Introduction</title>
 
     <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Harmattan:wght@400;700&family=Inter:wght@100;200;300;400;500;531;600;700;800;900&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Metrophobic&family=Tenali+Ramakrishna&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Harmattan:wght@400;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Metrophobic&family=Tenali+Ramakrishna&display=swap" rel="stylesheet"> 
     <script src="copyRights.js"></script>
 </head>
 <body>
@@ -42,21 +42,118 @@
             <header>
                 <h2>Introduction</h2>
             </header>
+            <article>
+                <p class="text">
+                    JavaScript is a cross-platform, object-oriented scripting language. It is a small 
+                    and lightweight language. Inside a host environment (for example, a web browser), 
+                    JavaScript can be connected to the objects of its environment to provide programmatic 
+                    control over them.
+                </p>
+                <p class="text">
+                    JavaScript contains a standard library of objects, such as Array, Date, and Math, 
+                    and a core set of language elements such as operators, control structures, and 
+                    statements. Core JavaScript can be extended for a variety of purposes by supplementing 
+                    it with additional objects; for example:
+                </p>
+                <ul>
+                    <li>
+                        <p>
+                            Client-side JavaScript extends the core language by supplying objects to 
+                            control a browser and its Document Object Model (DOM). For example, client-side 
+                            extensions allow an application to place elements on an HTML form and respond to 
+                            user events such as mouse clicks, form input, and page navigation.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Server-side JavaScript extends the core language by supplying objects relevant to 
+                            running JavaScript on a server. For example, server-side extensions allow an 
+                            application to communicate with a database, provide continuity of information from 
+                            one invocation to another of the application, or perform file manipulations on a 
+                            server.
+                        </p>
+                    </li>
+                </ul>
+            </article>
         </section>
         <section class="main-section" id="What_you_should_already_know">
             <header>
                 <h2>What you should already know</h2>
             </header>
+            <article>
+                <p class="text">
+                    This guide assumes you have the following basic background:
+                </p>
+                <ul>
+                    <li>
+                        <p>
+                            A general understanding of the Internet and the World Wide Web (WWW).
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Good working knowledge of HyperText Markup Language (HTML).
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Some programming experience. If you are new to programming, 
+                            try one of the tutorials linked on the main page about JavaScript.
+                        </p>
+                    </li>
+                </ul>
+            </article>
         </section>
         <section class="main-section" id="JavaScript_and_Java">
             <header>
                 <h2>JavaScript and Java</h2>
             </header>
+            <article>
+                <p class="text">
+                    JavaScript and Java are similar in some ways but fundamentally different in some others. 
+                    The JavaScript language resembles Java but does not have Java's static typing and strong 
+                    type checking. JavaScript follows most Java expression syntax, naming conventions and 
+                    basic control-flow constructs which was the reason why it was renamed from LiveScript 
+                    to JavaScript.
+                </p>
+                <p class="text">
+                    In contrast to Java's compile-time system of classes built by declarations, JavaScript 
+                    supports a runtime system based on a small number of data types representing numeric, 
+                    Boolean, and string values. JavaScript has a prototype-based object model instead of 
+                    the more common class-based object model. The prototype-based model provides dynamic 
+                    inheritance; that is, what is inherited can vary for individual objects. JavaScript 
+                    also supports functions without any special declarative requirements. Functions can 
+                    be properties of objects, executing as loosely typed methods.
+                </p>
+                <p class="text">
+                    JavaScript is a very free-form language compared to Java. You do not have to declare 
+                    all variables, classes, and methods. You do not have to be concerned with whether 
+                    methods are public, private, or protected, and you do not have to implement interfaces. 
+                    Variables, parameters, and function return types are not explicitly typed. 
+                </p>
+            </article>
         </section>
         <section class="main-section" id="Hello_world">
             <header>
                 <h2>Hello world</h2>
             </header>
+            <article>
+                <p class="text">
+                    To get started with writing JavaScript, open the Scratchpad and write your first 
+                    "Hello world" JavaScript code: 
+                </p>
+                <div class="code-box">
+                    <p>
+                        function greetMe(yourName) { alert("Hello " + yourName); }
+                    </p>
+                    <p>
+                        greetMe("World");
+                    </p>
+                </div>
+                <p class="text">
+                    Select the code in the pad and hit Ctrl+R to watch it unfold in your browser! 
+                </p>
+            </article>
         </section>
         <section class="main-section" id="Variables">
             <header>

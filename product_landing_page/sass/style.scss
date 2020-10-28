@@ -4,7 +4,8 @@
 }
 
 body {
-    background: url(../assets/images/laser_show_03b.jpg)  no-repeat;
+    max-width: 100%;
+    background: url(../assets/images/night.jpg)  no-repeat;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
 }
@@ -16,49 +17,53 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 56px;
+    height: 54px;
     top: 0;
     left: 0;
-    background: rgba(245, 245, 245, 0.75);
+    padding: 0 0 4px 16px;
+    background: rgb(225, 225, 225);
     border-bottom: 1px solid rgb(47, 79, 79);
+    z-index: 5;
 
     .company {
         width: 30%;
+        height: 40px;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: flex-end;
+        align-items: flex-start;
         text-decoration: none;
+        background: rgb(225, 225, 225);
 
         img {
             height: 36px;
             padding: 3px 3px;
-            background: rgba(206, 250, 167, 0.2);
+            background: white;
             border-radius: 50%;
-            border: 2px solid darkslategray;
+            border: 1px solid darkslategray;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24);
         }
         h2 {
-            margin: 0 0 3px -4px;
-            padding: 6px 8px 6px 12px;
+            margin: 2px 0 3px -4px;
+            padding: 4px 10px 6px 12px;
             color: darkslategray;
             font-size: 24px;
             font-weight: 700;
             text-decoration: none;
-            border-right: 2px solid darkslategray;
-            border-bottom: 2px solid darkslategray;
-            border-bottom-right-radius: 6px;
+            border-right: 1px solid darkslategray;
+            border-bottom: 1px solid darkslategray;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24);
         }
         &:hover {
 
             img {
-                border-color: rgb(101, 164, 0);
-                box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+                border-color: rgb(84, 136, 0);
+                box-shadow: none;
             }
             h2 {
-                color: rgb(101, 164, 0);
-                text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
-                border-color: rgb(101, 164, 0);
-                box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+                color: rgb(84, 136, 0);
+                border-color: rgb(76, 170, 29);
+                box-shadow: none;
             }
         }
     }
@@ -77,7 +82,7 @@ body {
             font-weight: 500;
 
             &:hover {
-                color: olive;
+                color: rgb(84, 136, 0);
                 text-decoration: underline;
                 text-underline-offset: 6px;
             }
@@ -97,10 +102,12 @@ main {
     padding-top: 40px;
 
     header {
+        margin-top: 20px;
 
         h1 {
-            padding-bottom: 12px;
+            padding-bottom: 25px;
             color: whitesmoke;
+            font-size: 40px;
             text-align: center;
             text-shadow: 0 0 2px black;
             letter-spacing: 1px;
@@ -118,24 +125,28 @@ main {
             border: 1px solid gray;
         }
         input[type = email] {
-            width: 232px;
-            height: 26px;
-            margin-bottom: 16px;
-            padding-left: 8px;
+            width: 252px;
+            height: 30px;
+            margin: 0 0 26px -16px;
+            padding: 0 8px 2px 8px;
+            font-family: 'Dosis', sans-serif;
+            font-size: 16px;
             background: rgba(255, 255, 255, 0.8);
+            border: none;
             border-radius: 4px;
+            box-shadow: inset 1px 1px 2px rgb(28, 28, 28), inset -1px -1px 2px rgb(28, 28, 28);
         }
         input[type = submit] {
-            width: 111px;
-            height: 33px;
+            width: 121px;
+            height: 34px;
             margin: 0 auto;
             color: whitesmoke;
             font-size: 16px;
             text-transform: capitalize;
             text-shadow: 0 0 1px black;
             letter-spacing: 2px;
-            background: linear-gradient(180deg, rgba(112,112,245,1) 0%, rgba(102,102,223,1) 10%, rgba(99,99,214,1) 40%, rgba(99,99,214,1) 60%, rgba(102,102,221,1) 90%, rgba(112,112,245,1) 100%);
-            border-color: rgb(84, 84, 184);
+            background: linear-gradient(180deg, rgba(112,112,245,1) 0%, rgb(94, 94, 206) 10%, rgb(85, 85, 185) 40%, rgb(85, 85, 184) 60%, rgb(95, 95, 206) 90%, rgba(112,112,245,1) 100%);
+            border: none;
             border-radius: 2px;
 
             &:hover {
@@ -149,7 +160,7 @@ main {
     .video_box,
     .player_card,
     .rent_box {
-        margin: 60px auto;
+        margin: 40px auto;
         background: rgba(255, 255, 255, 0.68);
         border: 1px solid rgba(47, 79, 79, 0.6);
         border-radius: 4px;
@@ -221,8 +232,8 @@ main {
     .video_and_cap {
         video {
             margin: 0 auto;
-            border: 2px solid rgba(128, 189, 189, 0.8);
-            border-radius: 4px;
+            border: 2px solid rgb(25, 37, 37);
+            border-radius: 2px;
         }
         figcaption {
             margin-top: 6px;
@@ -261,7 +272,7 @@ main {
         header img {
             width: 240px;
             margin: 15px 0 14px 0;
-            border: 1px solid rgba(128, 189, 189, 0.6);
+            border: 1px solid rgba(93, 138, 138, 0.8);
             border-radius: 2px;
         }
         header h2 {
@@ -271,8 +282,8 @@ main {
             word-spacing: -2px;
             text-align: center;
             background: rgba(214, 203, 77, 0.6);
-            border-top: 2px solid rgba(128, 189, 189, 0.6);
-            border-bottom: 2px solid rgba(128, 189, 189, 0.6);
+            border-top: 2px solid rgba(93, 138, 138, 0.8);
+            border-bottom: 2px solid rgba(93, 138, 138, 0.8);
         }
         section {
             padding: 12px 12px;
@@ -323,8 +334,8 @@ main {
             letter-spacing: 1px;
             word-spacing: 4px; 
             text-align: center;
-            background: rgba(214, 203, 77, 0.6);
-            border: 2px solid rgba(128, 189, 189, 0.6);
+            background: rgba(247, 234, 89, 0.4);
+            border: 2px solid rgba(93, 138, 138, 0.8);
             border-radius: 4px;
             box-shadow: 1px 1px 2px rgba(36, 36, 36, 0.2);
         }
@@ -387,8 +398,6 @@ main {
                 width: 71%;
                 padding: 5px 0 2px 0;
                 background: rgba(255, 255, 255, 0.4);
-                border: 1px solid rgba(128, 189, 189, 0.6);
-                border-left: none;
                 border-top-right-radius: 4px;
                 border-bottom-right-radius: 4px;
     
@@ -430,8 +439,12 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
-    height: 60px;
+    max-width: 100%;
+    height: 40px;
+    padding: 0 8%;
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
     background: rgba(245, 245, 245, 0.6);
     border-top: 1px solid rgb(47, 79, 79);
 
@@ -441,8 +454,27 @@ main {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 50%;
-        height: 60px;
+        height: 40px;
+
+        a {
+            color: rgb(47, 79, 79);
+            text-decoration: none;
+
+            &:hover {
+                color: rgb(62, 101, 1);
+                text-decoration: underline;
+            }
+        }
+    }
+    .developer {
+        width: 44%;
+
+        .name {
+            font-weight: 500;
+        }
+    }
+    .officials {
+        width: 30%;
     }
 }
 

@@ -50,7 +50,7 @@ body {
         .photo_box {
             width: 100%;
             margin: 0 auto;
-            height: 16rem;
+            height: 10rem;
             background: url(../assets/header_img.jpg) no-repeat;
             background-size: cover;
             opacity: .7;
@@ -64,7 +64,6 @@ body {
     top: 0;
     width: 100%;
     max-width: 1276px;
-    //perspective: 1276px;
     z-index: 1;
 
     .nav_list {
@@ -228,30 +227,32 @@ body {
     }
 }
 .title_header {
-    display: none;
-
-
+    display: flex;
     width: 100%;
     max-width: 1278px;
     margin: 0 auto;
-    padding: 4% 0 0 0;
+    padding: 6% 0 4% 0;
     background: rgb(232, 232, 232);
+    background: white;
     border-right: 1px solid black;
     border-left: 1px solid black;
 
     .header_container {
         width: 90%;
         margin: 0 auto;
-        padding: 4% 0;
-        border-right: 3px solid rgba(16, 116, 116, 0.8);
-        border-bottom: 3px solid rgba(16, 116, 116, 0.8);
+        padding: 0 0 2% 0;
+        border-right: 2px solid rgba(16, 116, 116, 0.8);
+        border-bottom: 2px solid rgba(16, 116, 116, 0.8);
+        border: 2px solid rgba(16, 116, 116, 0.8);
+        border-top: none;
 
         .title_box {
-            width: 90%;
+            width: 94%;
             margin: 0 auto;
-            padding: 2% 0;
-            background: rgb(212, 212, 212);
-            border: 2px solid rgb(151, 151, 151);
+            padding: 2% 0 1% 0;
+            //background: rgb(222, 222, 222);
+            border: 1px solid rgba(151, 151, 151, 0.4);
+            border-bottom: none;
     
             .main_title {
                 margin: 0 6%;
@@ -273,14 +274,14 @@ main {
     max-width: 1278px;
     padding: 2% 0;
     background: rgb(232, 232, 232);
+    background: white;
     border-right: 1px solid black;
     border-left: 1px solid black;
     overflow: hidden;
 }
 .holiday {
-    display: none;
-
-    
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin: 0 auto;
     padding: 0 0;
@@ -291,9 +292,9 @@ main {
         width: 92%;
         margin: 3% auto;
         padding: 2% 0;
-        background: rgb(212, 212, 212);
+        //background: rgb(228, 228, 228);
         //border: 2px solid rgb(151, 151, 151);
-        border: 2px solid rgba(16, 116, 116, 0.8);
+        border: 1px solid rgba(16, 116, 116, 0.6);
 
         .theory_title {
             margin: 0 3%;
@@ -310,8 +311,7 @@ main {
     .intro {
         width: 92%;
         margin: 0 auto;
-        background: rgb(212, 212, 212);
-        border: 2px solid rgb(151, 151, 151);
+        border: 1px solid rgba(151, 151, 151, 0.4);
 
         .paragraph {
             display: flex;
@@ -359,13 +359,11 @@ main {
                 margin: 1rem auto;
             }
             .photo_box .align_left {
-                //width: 100%;
                 margin: .5rem 0;
                 border: 1px solid rgb(12, 68, 84);
                 box-shadow: 0 0 4px black;
             }
             .photo_box .align_right {
-                //width: 100%;
                 margin: .5rem 0;
                 border: 1px solid rgb(12, 68, 84);
                 box-shadow: 0 0 4px black;
@@ -376,13 +374,11 @@ main {
         }
     }
     .explanation {
-        display: none;
-
-    
+        display: flex;
+        flex-direction: column;
         width: 92%;
         margin: 1rem auto;
-        background: rgb(212, 212, 212);
-        border: 2px solid rgb(151, 151, 151);
+        border: 1px solid rgba(151, 151, 151, 0.4);
 
         .paragraph {
             display: flex;
@@ -440,13 +436,11 @@ main {
         }
     }
     .conclusion {
-        display: none;
-
-    
+        display: flex;
+        flex-direction: column;
         width: 92%;
         margin: 1rem auto 0 auto;
-        background: rgb(212, 212, 212);
-        border: 2px solid rgb(151, 151, 151);
+        border: 1px solid rgba(151, 151, 151, 0.4);
 
         .paragraph {
             display: flex;
@@ -509,14 +503,11 @@ main {
     }
 }
 .destinations {
-    display: none;
-
-    
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin: 4% auto;
     padding: 4% 0 4% 0;
-    background: rgb(232, 232, 232);
-    //border: 3px solid rgba(16, 116, 116, 0.8);
 
     .img_container {
         display: block;
@@ -557,7 +548,6 @@ main {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                //align-content: center;
                 align-items: center;
                 width: 5%;
                 max-width: 5%;
@@ -584,7 +574,6 @@ main {
 
                 p {
                     color: rgb(16,86,84);
-                    //color: rgb(118, 14, 14);
                 }
             }
             .prev:hover {
@@ -637,7 +626,7 @@ main {
         .slide_col { 
             width: 16.68%;
             max-height: 100%;
-            margin: 0 0 -.35rem 0;
+            margin: 0 0 -.5rem 0;
             padding: 0 0;
             
             .demo {
@@ -658,10 +647,6 @@ main {
 .photo_drag_box {
     box-sizing: border-box;
     display: flex;
-
-    display: none;
-
-    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -679,17 +664,14 @@ main {
     margin: 0 auto;
     padding: 3.2rem 0 0 0;
     overflow-x: scroll;
-    //overflow-y: hidden;
     white-space: nowrap;
     user-select: none;
     cursor: pointer;
     transition: all 0.2s;
-    //transform: scale(0.98);
     will-change: transform;
     perspective: 28rem;
     scrollbar-width: 2rem;
     scrollbar-color: rgb(16,86,84);
-    //-ms-overflow-style: none;
     
     &::-webkit-scrollbar {
         display: block;
@@ -700,7 +682,6 @@ main {
         align-items: center;
         justify-content: center;
         width: 12rem;
-        //height: calc(100% - 40px);
         height: 30rem;
         margin: 0 0 0 -.2rem;
         border: 2px solid rgb(151, 151, 151);
@@ -789,7 +770,6 @@ main {
     h5 {
         margin: 0 auto;
         padding: 0 0;
-        //color: rgb(118, 14, 14);
         color: rgb(16,86,84);
         font-family: 'Genos', sans-serif;
         font-size: 1rem;
@@ -1052,10 +1032,7 @@ main {
                     width: 100%;
                     margin: 0 auto;
                     padding: 0 0;
-                    //background: rgba(55, 55, 55, .2);
                     background: rgba(12, 68, 84, .2);
-                    //border-top: 1px solid rgba(12, 68, 84, .4);
-                    //border-left: 1px solid rgba(12, 68, 84, .4);
                     border: 1px solid rgba(12, 68, 84, .6);
                     box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, .2);
                 }
@@ -1086,7 +1063,6 @@ main {
                     outline: none;
                 }
                 input[type=range]::-webkit-scrollbar {
-                    //background: rgba(157, 157, 157, 0.8);
                     background: rgba(12, 68, 84, .6);
                 }
                 input[type=range]::-webkit-slider-runnable-track {
@@ -1094,7 +1070,6 @@ main {
                     height: 6px;
                     margin-left: -4px;
                     cursor: pointer;
-                    //background: rgba(157, 157, 157, 0.8);
                     background: rgba(12, 68, 84, .6);
                     border: 1px solid rgba(12, 68, 84, 0.14);
                     border-radius: 28px;
@@ -1221,9 +1196,6 @@ main {
             margin: 0 auto;
             padding: 0 0;
             background: rgba(118, 14, 14, 0.6);
-            //border: 1px solid rgb(8, 50, 60);
-            //border-radius: 6px;
-            //box-shadow: 0 0 4px 0 rgba(202, 169, 63, 0.48);
             z-index: 5;
         }
     }
@@ -1240,10 +1212,6 @@ main {
 .highlight {
     position: absolute;
     display: block;
-
-    display: none;
-
-    
     top: -.2rem;
     left: -.3rem;
     padding: .2rem .3rem 0 .3rem;
@@ -1273,12 +1241,10 @@ main {
     transform: translateX(0%) scale(1);
 }
 .banner {
-    //display: none;
-
-    
+    display: flex;
     width: 100%;
     margin: 6% auto;
-    height: 18rem;
+    height: 6rem;
     background-repeat: no-repeat;
     background-size: cover;
     border-top: 2px solid rgba(12, 68, 84, 0.9);
@@ -1286,45 +1252,35 @@ main {
 }
 
 .ban_one {
-    margin: 0 auto 5% auto;
+    margin: 0 auto 0 auto;
     background: url(/assets/banner_01.jpg);
-    background-position-y: -7rem;
+    background-position-y: -17rem;
 }
 .ban_two {
-    display: none;
-
-    
     background: url(/assets/banner_02.jpg);
-    background-position-y: -12rem;
+    background-position-x: -32rem;
+    background-position-y: -20rem;
 }
 .ban_three {
-    display: none;
-
-    
     background: url(/assets/banner_03.jpg);
-    //background-position-y: -2rem;
+    background-position-y: -5rem;
 }
 .ban_four {
-    display: none;
-
-    
     background: url(/assets/banner_04.jpg);
-    background-position-y: -7rem;
+    background-position-y: -3rem;
 }
 .ban_five {
     background: url(/assets/banner_05.jpg);
-    background-position-y: -7rem;
+    background-position-y: -11.5rem;
 }
 .ban_six {
-    display: none;
-
-    
     background: url(/assets/banner_06.jpg);
-    background-position-y: -1.6rem;
+    background-position-x: -13rem;
+    background-position-y: -8rem;
 }
 .ban_seven {
     background: url(/assets/banner_07.jpg);
-    background-position-y: -26rem;
+    background-position-y: -22rem;
 }
 
 // _________ EFFECTS _________ 
@@ -1520,15 +1476,68 @@ main {
     }
 }
 */
+@media (min-width: 375px) {
+    .page_header .header_container .photo_box {
+        height: 14.6rem;
+    }
+    .title_header .header_container .title_box .main_title {
+        font-size: 1.65rem;
+        line-height: 1.65rem;
+    }
+}
 @media (min-width: 500px) {
     .tv_box .player_controls .controlers .toggle {
         width: 34%;
     }
 }
+@media (min-width: 600px) {
+    .title_header .header_container .title_box .main_title {
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        margin: 0 5%;
+    }
+    .banner {
+        height: 8rem;
+    }
+    .ban_one {
+        background-position-y: -19rem;
+    }
+    .ban_two {
+        background-position-y: -18rem;
+    }
+    .ban_three {
+        background-position-y: -3.5rem;
+    }
+    .ban_four {
+        background-position-y: -2rem;
+    }
+    .ban_five {
+        background-position-y: -10rem;
+    }
+    .ban_six {
+        background-position-y: -5rem;
+    }
+    .ban_seven {
+        background-position-y: -20rem;
+    }
+}
 @media (min-width: 768px) {
+    .page_header .header_container .photo_box {
+        height: 16rem;
+    }
+    .page_header .header_container .title_box .page_title {
+        font-size: 2.5rem;
+        padding: 0 0 2rem 0;
+    }
+    .title_header .header_container .title_box .main_title {
+        font-size: 2.1rem;
+        line-height: 1.7rem;
+        margin: 0 4%;
+    }
     .holiday .intro .paragraph,
     .holiday .explanation .paragraph,
     .holiday .conclusion .paragraph {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
 
@@ -1573,18 +1582,69 @@ main {
             }
         }
     }
-    /*
-    .photo_panels_box {
-        display: flex;
-    }
-    */
     .tv_box .player_controls .controlers .toggle {
         width: 36%;
     }
+    .banner {
+        height: 10rem;
+    }
+    .ban_one {
+        background-position-y: -19rem;
+    }
+    .ban_two {
+        background-position-y: -16rem;
+    }
+    .ban_three {
+        background-position-y: -3.5rem;
+    }
+    .ban_four {
+        background-position-y: -2rem;
+    }
+    .ban_five {
+        background-position-y: -10rem;
+    }
+    .ban_six {
+        background-position-y: -5rem;
+    }
+    .ban_seven {
+        background-position-y: -19rem;
+    }
 }
 @media (min-width: 1024px) {
+    .page_header .header_container .title_box .page_title {
+        font-size: 2.8rem;
+    }
+    .title_header .header_container .title_box .main_title {
+        font-size: 2.4rem;
+        line-height: 1.7rem;
+        margin: 0 5%;
+    }
     .tv_box .player_controls .controlers .toggle {
         width: 38%;
+    }
+    .banner {
+        height: 13rem;
+    }
+    .ban_one {
+        background-position-y: -16rem;
+    }
+    .ban_two {
+        background-position-y: -14rem;
+    }
+    .ban_three {
+        background-position-y: -1.5rem;
+    }
+    .ban_four {
+        background-position-y: 0;
+    }
+    .ban_five {
+        background-position-y: -8rem;
+    }
+    .ban_six {
+        background-position-y: -3rem;
+    }
+    .ban_seven {
+        background-position-y: -16rem;
     }
 }
 @media (min-width: 1280px) {

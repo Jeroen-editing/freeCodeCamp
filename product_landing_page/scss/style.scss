@@ -1,0 +1,1826 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+}
+$lightgray: #505050;
+$darkgray: #202020;
+$shadow: -1px -1px 2px 0 rgba($lightgray, .4), -1px 1px 2px 0 rgba($lightgray, .4);
+$insetShadow: inset 2px 2px 2px 0 rgba($lightgray, .3), inset -2px -2px 2px 0 rgba($lightgray, .3),
+inset 1px 1px 1px 0 rgba($darkgray, .2), inset -1px -1px 1px 0 rgba($darkgray, .2);
+
+body {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(101, 101, 101);
+}
+.header {
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    height: 28px;
+    max-height: 28px;
+    top: 0;
+    left: 0;
+    padding: 0 0;
+    background: #e1e1e1;
+    border-bottom: 1px solid #4f4927;
+    z-index: 5;
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1280px;
+        height: 27px;
+        max-height: 27px;
+        margin: 0 auto;
+        padding: 0 0;
+
+        .company_box {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            width: 85%;
+            height: 28px;
+            max-height: 28px;
+            padding: 0 0 .1rem 0;
+
+            .home_icon {
+                height: 24px;
+                margin: .1rem 0 0 1rem;
+                padding: 0 0;  
+            }
+            .company {
+                display: none;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                height: 26px;
+                max-height: 26px;
+                margin: .1rem 0 0 1rem;
+                padding: .2rem .6rem 0 0;
+                text-decoration: none;
+
+                .company_logo {
+                    height: 26px;
+                    margin: 0 0;
+                    padding: 0 0 .1rem 0; 
+                }
+                .company_name {
+                    margin: 0 0 0 .5rem;
+                    padding: .15rem 0 0 0;
+                    color: #2f4f4f;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+            }
+            .comp_hidden {
+                display: none;
+            }
+            .comp_visible {
+                display: flex;
+                animation: fadeIn 1.5s forwards;
+            }
+            &:hover {
+                background: white;
+    
+                .home_icon {
+                    display: none;
+                }
+                .company {
+                    display: flex;
+                    animation: fadeIn 1.5s forwards;
+                }
+            }
+        }
+    }
+    .nav_bar {
+        width: 15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 26px;
+        max-height: 26px;
+
+        .nav_link {
+            display: none;
+            width: 33.333%;
+            height: 22px;
+            max-height: 22px;
+            margin: 0 auto;
+            padding: .4rem 0 0 0;
+            color: #2f4f4f;
+            text-decoration: none;
+            font-size: .9rem;
+            font-weight: 500;
+            text-align: center;
+
+            &:hover {
+                color: #9C9054;
+                background: white;
+            }
+        }
+        .menu_link {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .menu_logo {
+                width: 28px;
+                margin: 0 0;
+                padding: .1rem 0; 
+            }
+        }
+    }
+}
+.header_list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    max-height: 5rem;
+    padding: 33px 0 0 0;
+    background: rgba(47, 79, 79, 0.6);
+    border-bottom: 1px solid #4f4927;
+
+    .nav_list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        width: 85%;
+
+        .nav_link {
+            width: 100%;
+            height: 1.4rem;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: left;
+            margin: 0 0 0 1rem;
+
+            &:hover {
+                color: #4F3749;
+            }
+        }
+    }
+    .close_link {
+        width: 15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+
+        .close_logo {
+            width: 22px;
+            margin: 0 0;
+            padding: .2rem 0 .1rem 0; 
+        }
+    }
+}
+.box_hidden {
+    display: none;
+}
+.box_visible {
+    display: flex;
+}
+
+main {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 1rem auto;
+    padding: 2.6rem 0 0 0;
+    background: white;
+
+    .title {
+        width: 100%;
+        margin: 0 auto;
+        padding: .2rem 0 .6rem 0;
+        border-bottom: 2px solid #4F3749;
+
+        .main_title,
+        .sub_title {
+            width: 88%;
+            margin: 0 auto;
+            padding: 0 0 1% 0;
+            text-align: center;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+        }
+        .main_title {
+            color: darkslategray;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+        }
+        .sub_title {
+            color: #9C9054;
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 1.2rem;
+        }
+    }
+    .image_box {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 0;
+        border-bottom: 2px solid #4F3749;
+
+        .deck_img {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 0;
+        }
+    }
+    .slogan_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 1rem 0 2rem 0;
+        border-bottom: 2px solid #4F3749;
+
+        .main_slogan,
+        .sub_slogan,
+        .location_title {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 0 1% 0;
+            text-align: center;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+        }
+        .main_slogan {
+            color: darkslategray;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+        }
+        .sub_slogan {
+            color: #9C9054;
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 1rem;
+        }
+        .location_title {
+            width: 100%;
+            padding: 2rem 0 1% 0;
+            color: #4f4927;
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 1.2rem;
+            text-underline-offset: 10px;
+            text-decoration-color: #9C9054;
+        }
+    }
+    .guarantee_box {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 1rem 0 2rem 0;
+        border-bottom: 2px solid #4F3749;
+
+        .guarantee_title {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: .8rem 0 .6rem 0;
+            color: #2f4f4f;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 500;
+            text-align: center;
+            //background: white;
+            //border: 1px solid rgba(79, 55, 73, 0.6);
+            //border-radius: 8px;
+        }
+        .guarantees {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            max-width: 100%;
+            margin: 1rem auto 0 auto;
+            padding: 0 0;
+
+            .guarantee {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 96%;
+                max-width: 96%;
+                margin: 0 auto;
+        
+                .left_col,
+                .right_col {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    padding: 0 0;
+                    margin: 0 auto;
+                }
+                .left_col {
+                    width: 14%;
+                    margin: 0 .2rem .6rem auto;
+                }
+                .right_col {
+                    width: 70%;
+                }
+                .guarantee—icon {
+                    width: 2.7rem;
+                    max-width: 2.7rem;
+                    height: 2.7rem;
+                    max-height: 2.7rem;
+                    margin: .2rem auto 0 auto;
+                    padding: .3rem .2rem .2rem .3rem;
+                    background: rgba(156, 144, 84, 0.7);
+                    border: 2px solid #4F3749;
+                    border-radius: 6px;
+                }
+                .guarantee—subtitle {
+                    width: 100%;
+                    color: #2f4f4f;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: .9rem;  
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                }
+                .line_under {
+                    width: 100%;
+                    height: 1px;
+                    margin: .3rem 0 .2rem 0;
+                    background: #4F3749;
+                }
+                .guarantee—text {
+                    width: 100%;
+                    padding: .2rem 0 0 0;
+                    color: #9C9054;
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    font-size: .75rem;
+                    font-weight: 400;
+                    line-height: .95rem;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+    .video_box {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 0 .6rem 0;
+        border-bottom: 2px solid #4F3749;
+
+        .video_and_cap {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 0;
+
+            video {
+                width: 100%;
+                max-width: 100%;
+                margin: 0 auto;
+                padding: 0 0;
+            }
+            figcaption {
+                width: 79%;
+                max-width: 79%;
+                margin: 0 auto 0 auto;
+                padding: .1rem 0 .2rem 0;
+                color: #4f4927;
+                font-family: 'Montserrat Alternates', sans-serif;
+                font-size: .9rem;
+                font-weight: 500;
+                line-height: 1.4rem;
+                text-align: center;
+            }
+        }
+    }
+    .players_box {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 1rem 0 2rem 0;
+        border-bottom: 2px solid #4F3749;
+
+        .sales_title {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: .8rem 0 .6rem 0;
+            color: #2f4f4f;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 500;
+            text-align: center;
+        }
+        .sales {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 88%;
+            max-width: 88%;
+            margin: 2rem auto 0 auto;
+            padding: 0 0;
+
+            .player_card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                max-width: 100%;
+                margin: 0 auto 2rem auto;
+                padding: 0 0;
+                border: 1px solid rgba(79, 55, 73, 0.6);
+                border-radius: .4rem;
+                overflow: hidden;
+        
+                &:hover {
+                    header img {
+                        animation: scalePhoto 1s forwards ease-in;
+                    }
+                }
+                header {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    overflow: hidden;
+
+                    img {
+                        width: 86.4%;
+                        margin: .85rem auto;
+                        padding: 0 0;
+                        border-top-right-radius: .35rem;
+                        border-top-left-radius: .35rem;
+                    }
+                }
+                .name_section {
+                    width: 100%;
+                    margin: 0 auto;
+                    padding: .6rem 0;
+                    background: rgba(196, 176, 76, 0.6);
+                    border-top: 1px solid rgba(79, 55, 73, 0.6);
+                    border-bottom: 1px solid rgba(79, 55, 73, 0.6);
+
+                    h4 {
+                        width: 100%;
+                        color: #2f4f4f;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        text-align: center;
+                    }
+                }
+                .price_section {
+                    width: 100%;
+                    padding: .6rem 0;
+
+                    h5 {
+                        width: 80%;
+                        margin: 0 auto;
+                        padding: .2rem 0 .8rem 0;
+                        color: #2f4f4f;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        text-align: center;
+                        border-bottom: 1px solid rgba(79, 55, 73, 0.4);
+                    }
+                }
+                .info_section {
+                    width: 100%;
+                    padding: .4rem 0 .9rem 0;
+
+                    p {
+                        width: 80%;
+                        margin: 0 auto;
+                        padding: 0 0 .4rem 0;
+                        color: #4f4927;
+                        font-family: 'Montserrat Alternates', sans-serif;
+                        font-size: .9rem;
+                        line-height: 1.2rem;
+                        text-align: center;
+                    }
+                }
+                .select_footer {
+                    width: 100%;
+                    bottom: 0;
+                    border-top: 1px solid rgba(79, 55, 73, 0.6);
+                    overflow: hidden;
+
+                    button {
+                        width: 100%;
+                        height: 40px;
+                        padding: 8px 0;
+                        color: whitesmoke;
+                        font-size: .9rem;
+                        text-shadow: 0 0 1px black;
+                        letter-spacing: 2px;
+                        color: white;
+                        background: rgb(47,79,79);
+                        background: linear-gradient(180deg, rgba(47,79,79,1) 0%, rgba(55,105,105,1) 15%, rgba(76,156,156,1) 40%, rgba(76,156,156,1) 60%, rgba(55,105,105,1) 85%, rgba(47,79,79,1) 100%);
+                        border: none;
+        
+                        &:hover {
+                            color: #4F3749;
+                            background: rgb(79,73,39);
+                            background: linear-gradient(180deg, rgba(79,73,39,1) 0%, rgba(116,107,61,1) 15%, rgba(156,144,84,1) 40%, rgba(156,144,84,1) 60%, rgba(116,107,61,1) 85%, rgba(79,73,39,1) 100%);
+                            box-shadow: $insetShadow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rent_box {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 1rem 0 2rem 0;
+        border-bottom: 2px solid #4F3749;
+
+        .rent_title {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: .8rem 0 .6rem 0;
+            color: #2f4f4f;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 500;
+            text-align: center;
+        }
+        .rental {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            width: 88%;
+            max-width: 88%;
+            margin: 1rem auto 0 auto;
+            padding: 0 0;
+        
+            .top_col,
+            .mid_col,
+            .bottom_col {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                width: 100%;
+                max-width: 100%;
+                margin: 0 auto 2rem auto;
+                padding: 0 0;
+                border: 1px solid rgba(79, 55, 73, 0.6);
+                border-radius: .4rem;
+                overflow: hidden;
+
+                &:hover {
+                        button {
+                            color: #4F3749;
+                            background: rgb(79,73,39);
+                            background: linear-gradient(180deg, rgba(79,73,39,1) 0%, rgba(116,107,61,1) 15%, rgba(156,144,84,1) 40%, rgba(156,144,84,1) 60%, rgba(116,107,61,1) 85%, rgba(79,73,39,1) 100%);
+                            box-shadow: $insetShadow;
+                        }
+                    .photo_box {
+                        .rent_photo {
+                            animation: scalePhoto 1s forwards ease-in;
+                        }
+                    }
+                }
+    
+                .photo_box {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    width: 100%;
+                    max-width: 100%;
+                    text-decoration: none;
+    
+                    .rent_photo {
+                        width: 86.4%;
+                        max-width: 86.4%;
+                        margin: .65rem auto .7rem auto;
+                        padding: 1rem 0;
+                        background: white;
+                        border-top-right-radius: .35rem;
+                        border-top-left-radius: .35rem;
+                    }
+                }
+                .rent_type {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    width: 100%;
+                    max-width: 100%;
+                    padding: 0 0;
+                    border-top-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+        
+                    .pretitle_box,
+                    .title_box,
+                    .subtitle_box,
+                    .text_box {
+                        width: 100%;
+                        max-width: 100%;
+                        margin: 0 auto;
+                        padding: .6rem 0;
+                        text-align: center;
+                    }
+                    .pretitle_box,
+                    .text_box {
+                        border-bottom: 1px solid rgba(79, 55, 73, 0.6);
+                    }
+                    .title_box {
+                        background: rgba(196, 176, 76, 0.6);
+                        border-bottom: 1px solid rgba(79, 55, 73, 0.6);
+                    }
+                    .rent_pretitle,
+                    .rent_title,
+                    .rent_subtitle {
+                        width: 80%;
+                        max-width: 80%;
+                        margin: 0 auto;
+                        padding: 0 0;
+                        color: #2f4f4f;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 500;
+                        letter-spacing: 1px;
+                        text-align: center;
+                    }
+                    .rent_pretitle,
+                    .rent_subtitle {
+                        font-size: 1rem;
+                        font-weight: 600;
+                    }
+                    .rent_title {
+                        width: 90%;
+                        max-width: 90%;
+                        font-size: 1.4rem;
+                    }
+                    .rent_subtitle {
+                        padding: .4rem 0 .8rem 0;
+                        border-bottom: 1px solid rgba(79, 55, 73, 0.6);
+                    }
+                    .rent_text {
+                        width: 80%;
+                        max-width: 80%;
+                        margin: 0 auto;
+                        padding: 0 0 .4rem 0;
+                        color: #4f4927;
+                        font-family: 'Montserrat Alternates', sans-serif;
+                        font-size: .9rem;
+                        line-height: 1.2rem;
+                        text-align: center;
+                    }
+                }
+                button {
+                    width: 100%;
+                    height: 40px;
+                    padding: 8px 0;
+                    color: white;
+                    font-size: .9rem;
+                    text-shadow: 0 0 1px black;
+                    letter-spacing: 2px;
+                    background: rgb(47, 79, 79);
+                    background: linear-gradient(180deg, rgba(47,79,79,1) 0%, rgba(55,105,105,1) 15%, rgba(76,156,156,1) 40%, rgba(76,156,156,1) 60%, rgba(55,105,105,1) 85%, rgba(47,79,79,1) 100%);
+                    border: none;
+                }
+            }
+        }
+    }
+    .location_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 2rem 0 0 0;
+        background: rgba(156, 144, 84, 0.2);
+        border-bottom: 2px solid #4F3749;
+
+        .location_title {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: .8rem 0 .6rem 0;
+            color: #2f4f4f;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            text-align: center;
+        }
+        .address_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: .8rem 0 1rem 0;
+
+            .map {
+                width: 100%;
+                max-width: 100%;
+                height: 16rem;
+                margin: 0 auto 1rem auto;
+                border: none;
+                border-top: 1px solid #4F3749;
+                border-bottom: 1px solid #4F3749;
+            }
+            .address {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                max-width: 100%;
+                margin: 0 auto;
+                padding: 0 0 1rem 0;
+
+                p {
+                    width: 100%;
+                    max-width: 100%;
+                    margin: 0 auto;
+                    padding: .1rem 0;
+                    color: #4f4927;
+                    text-align: center;
+                }
+                .region,
+                .land {
+                    text-transform: uppercase;
+                }
+                .phone {
+                    color: #9C9054;
+                }
+            }
+            
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: .8rem 0  1.4rem 0;
+        background: rgba(156, 144, 84, 0.75);
+        border-bottom: 2px solid #4F3749;
+        z-index: 10;
+
+        .email_label {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto .8rem auto;
+            color: #4F3749;
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-align: center;
+
+            p {
+                padding: 0 0 .2rem 0;
+            }
+        }
+        .form_inputs {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 0;
+        }
+        input[type = email] {
+            width: 74%;
+            max-width: 15rem;
+            height: 28px;
+            margin: 0 auto;
+            padding: 1px 8px;
+            font-family: 'Dosis', sans-serif;
+            font-size: .9rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            outline: none;
+            border: 1px solid #2f4f4f;
+            border-radius: 16px;
+            box-shadow: inset 1px 1px 2px rgba(28, 28, 28, 0.4), inset -1px -1px 2px rgba(28, 28, 28, 0.4);
+        }
+        input[type = submit] {
+            width: 45%;
+            max-width: 10rem;
+            height: 32px;
+            margin: 1rem auto 0 auto;
+            padding: 2px 0 2px 0;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            background: rgb(47, 79, 79);
+                    background: linear-gradient(180deg, rgba(47,79,79,1) 0%, rgba(55,105,105,1) 15%, rgba(76,156,156,1) 40%, rgba(76,156,156,1) 60%, rgba(55,105,105,1) 85%, rgba(47,79,79,1) 100%);
+            border: 1px solid #2f4f4f;
+            border-radius: 16px;
+
+            &:hover {
+                color: #4F3749;
+                background: rgb(79,73,39);
+                background: linear-gradient(180deg, rgba(79,73,39,1) 0%, rgba(116,107,61,1) 15%, rgba(156,144,84,1) 40%, rgba(156,144,84,1) 60%, rgba(116,107,61,1) 85%, rgba(79,73,39,1) 100%);
+                box-shadow: $insetShadow;
+            }
+        }
+    }
+}
+.page_footer {
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    height: 1.2rem;
+    bottom: 0;
+    left: 0;
+    padding: 0 0;
+    font-family: 'Dosis', sans-serif;
+    font-size: .6rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background: rgb(225, 225, 225);
+    border-top: 1px solid rgb(47, 79, 79);
+
+    .footer_nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        height: 1.2rem;
+
+        .developer,
+        .officials {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 1.2rem;
+            margin: 0 0;
+            padding: 0 0;
+        }
+        .developer {
+            width: 55%;
+
+            p {
+                color: rgb(47, 79, 79);
+                font-family: 'Dosis', sans-serif;
+                font-size: .6rem;
+                font-weight: 400;
+                letter-spacing: 1px;
+                text-align: center;
+            }
+        }
+        .officials {
+            width: 45%;
+
+            a {
+                width: 45%;
+                color: rgb(47, 79, 79);
+                font-family: 'Dosis', sans-serif;
+                font-size: .6rem;
+                font-weight: 400;
+                letter-spacing: 1px;
+                text-align: center;
+                text-decoration: none;
+
+                &:hover {
+                    color: rgb(62, 101, 1);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@keyframes scalePhoto {
+    0% {
+        scale: 100%;
+        transform: translateX(0);
+    }
+    80% {
+        scale: 113%;
+        transform: translateX(.012rem);
+    }
+    100% {
+        scale: 115.5%;
+        transform: translateX(.018rem);
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: .8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 568px) {
+    .header {
+        .company_box {
+            width: 40%;
+
+            .home_icon,
+            .company {
+                margin: .1rem 0 0 .2rem;
+            }
+        }
+        .nav_bar {
+            width: 60%;
+
+            .nav_link {
+                display: inline-block;
+            }
+            .menu_link {
+                display: none;
+            }
+        }
+    }
+    main {
+        .guarantee_box {
+            padding: 2.4rem 0;
+
+            .guarantees .guarantee {
+                justify-content: flex-start;
+                align-items: flex-start;
+                align-content: flex-start;
+                width: 92%;
+                margin: 0 auto 0 0;
+
+                .left_col {
+                    width: 12%;
+                    margin: 0 .6rem .6rem 2rem;
+                }
+                .right_col {
+                    width: 88%;
+                    margin: 0 auto .6rem .6rem;
+                }
+            }
+        }
+        .players_box .sales,
+        .rent_box .rental {
+            width: 75%;
+            max-width: 75%;
+        }
+        .location_box .location_title {
+            font-size: 1.8rem;
+        }
+    }
+}
+@media (min-width: 667px) {
+    .header .navbar {
+        .company_box {
+            width: 38%;
+        }
+        .nav_bar {
+            width: 62%;
+        }
+    }
+    main {
+        .guarantee_box {
+            padding: 2.4rem 0;
+
+            .guarantees .guarantee {
+                justify-content: space-evenly;
+                width: 80%;
+                margin: 0 auto 0 auto;
+
+                .left_col {
+                    width: 12%;
+                    margin: 0 .6rem .6rem 0;
+                }
+                .right_col {
+                    width: 82%;
+                    margin: 0 auto .6rem .6rem;
+                }
+            }
+        }
+        .video_box {
+            padding: 2rem 0;
+
+            .video_and_cap {
+                width: 76%;
+                margin: 1rem auto 0 auto;
+
+                video {
+                    border: 1px solid rgba(79, 55, 73, 0.6);
+                }
+                figcaption {
+                    width: 84%;
+                    max-width: 84%;
+                }
+            }
+        }
+        .players_box {
+            .sales {
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                width: 96%;
+                max-width: 96%;
+
+                .player_card {
+                    width: 30%;
+                    max-width: 30%;
+
+                    header img {
+                        margin: .6rem auto;
+                    }
+                    .name_section h4 {
+                        width: 90%;
+                        height: 3.6rem;
+                        margin: 0 auto;
+                        line-height: 1.8rem;
+                    }
+                    .info_section {
+                        height: 8.8rem;
+                    }
+                    .select_footer button {
+                        font-size: .8rem;
+                    }
+                }
+            }
+            
+        }
+        .rent_box {
+            padding: 1rem 0 2rem 0;
+
+            .rental {
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                align-content: flex-start;
+                width: 96%;
+                max-width: 96%;
+
+                .top_col,
+                .mid_col,
+                .bottom_col {
+                    width: 30%;
+                    max-width: 30%;
+
+                    .rent_type {
+                        .title_box {
+                            height: 5rem;
+
+                            .rent_title {
+                                width: 89%;
+                                max-width: 89%;
+                                font-size: 1rem;
+                                line-height: 1.6rem;
+                            }
+                        }
+                        .subtitle_box .rent_subtitle {
+                            height: 5.2rem;
+                        }
+                        .text_box {
+                            height: 12.5rem;
+                        }
+                    }
+                    button {
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+        .location_box .address_box .address {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            max-width: 100%;
+
+            p {
+                width: 11%;
+                max-width: 11%;
+                margin: 0 0;
+                text-align: left; 
+            }
+            .street,
+            .town {
+                width: 18%;
+                max-width: 18%; 
+            }
+            .phone {
+                width: 26%;
+                max-width: 26%;
+                text-align: right; 
+            }
+        }
+    }
+}
+@media (min-width: 760px) {
+    main {
+        .guarantee_box .guarantees {
+            justify-content: center;
+
+            .guarantee {
+                width: 82%;
+
+                .left_col {
+                    width: 10%;
+                    margin: 0 1rem .6rem auto;
+                }
+                .right_col {
+                    width: 85%;
+                    margin: 0 auto .6rem auto;
+
+                    .guarantee—text {
+                        font-size: .9rem;
+                        line-height: 1.1rem;
+                    }
+                }
+            }
+        }
+        .video_box {
+            .video_and_cap {
+                width: 70%;
+            }
+        }
+        .players_box .sales {
+            width: 90%;
+            max-width: 90%;
+
+            .player_card {
+                width: 30%;
+                max-width: 30%;
+
+                header img {
+                    margin: .65rem auto;
+                }
+                .name_section h4 {
+                    width: 84%;
+                    margin: 0 auto;
+                }
+                .info_section {
+                    height: 7.8rem;
+                }
+            }
+        }
+        .rent_box .rental {
+            width: 90%;
+            max-width: 90%;
+
+            .top_col,
+            .mid_col,
+            .bottom_col {
+                width: 30%;
+                max-width: 30%;
+
+                .rent_type {
+                    .title_box {
+                        height: 4.4rem;
+
+                        .rent_title {
+                            width: 80%;
+                            max-width: 80%;
+                            margin: auto auto;
+                            font-size: 1.1rem;
+                        }
+                    }
+                    .text_box {
+                        height: 11.3rem;
+                    }
+                }                   
+            }
+        }
+        form {
+            .email_label {
+                font-size: 1.4rem;
+                letter-spacing: 1px;
+            }
+            input[type = email] {
+                width: 74%;
+                max-width: 18rem;
+                height: 30px;
+                border-radius: 20px;
+            }
+            input[type = submit] {
+                width: 45%;
+                max-width: 14rem;
+                height: 36px;
+                padding: 1px 0 0 0;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+@media (min-width: 800px) {
+    .header .navbar {
+        .company_box {
+            width: 30%;
+        }
+        .nav_bar {
+            width: 70%;
+        }
+    }
+    main {
+        .players_box .sales {
+            width: 86%;
+            max-width: 86%;
+        }
+        .rent_box .rental {
+            width: 86%;
+            max-width: 86%;
+        }
+        form {
+            .email_label {
+                font-size: 1.5rem;
+                letter-spacing: 2px;
+            }
+            input[type = email] {
+                width: 74%;
+                max-width: 19rem;
+                height: 30px;
+                border-radius: 20px;
+            }
+            input[type = submit] {
+                width: 45%;
+                max-width: 15rem;
+                height: 36px;
+                padding: 1px 0 0 0;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+@media (min-width: 810px) {
+    main {
+        .location_box .address_box {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            align-content: space-between;
+            width: 92%;
+            max-width: 92%;
+
+            .map {
+                width: 76%;
+                max-width: 76%;
+                height: 19rem;
+                border: 1px solid #4F3749;
+                border-radius: 8px;
+            }
+            .address {
+                flex-direction: column;
+                justify-content: start;
+                align-items: flex-start;
+                align-content: flex-start;
+                width: 22%;
+
+                p {
+                    width: 100%;
+                    max-width: 100%;
+                    padding: 0 0 .4rem 0;
+                    text-align: left;
+                }
+                .street,
+                .town {
+                    width: 100%;
+                    max-width: 100%; 
+                }
+                .phone {
+                    width: 100%;
+                    max-width: 100%; 
+                    margin: .5rem auto 0 auto;
+                    padding: 1rem 0 0 0;
+                    text-align: left;
+                    border-top: 1px solid #9C9054;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 896px) {
+    .header .navbar {
+        .company_box {
+            width: 27%;
+        }
+        .nav_bar {
+            width: 73%;
+        }
+    }
+    main {
+        .players_box .sales .player_card .name_section {
+            height: 3.4rem;
+        }
+        .rent_box .rental {
+            .top_col,
+            .mid_col,
+            .bottom_col {
+                .rent_type {
+                    .subtitle_box .rent_subtitle {
+                        height: 5rem;
+                    }
+                    .text_box {
+                        height: 10rem;
+                    }
+                }
+            }
+        }
+        form {
+            .email_label {
+                margin: 1rem auto .2rem auto;
+            }
+            .form_inputs {
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                align-content: flex-start;
+                width: 80%;
+                margin: 0 auto;
+                padding: .8rem 0;
+
+                input[type = email] {
+                    width: 74%;
+                    max-width: 19rem;
+                    margin: 0 .5rem 0 auto ;
+                }
+                input[type = submit] {
+                    width: 25%;
+                    max-width: 10rem;
+                    height: 34px;
+                    margin: 0 auto 0 .5rem;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 926px) {
+    main {
+        .players_box .sales {
+            width: 90%;
+            max-width: 90%;
+
+            .player_card {
+                width: 28%;
+                max-width: 28%;
+
+                .name_section {
+                    height: 3.4rem;
+                }
+            }
+        }
+        .rent_box .rental {
+            width: 90%;
+            max-width: 90%;
+
+            .top_col,
+            .mid_col,
+            .bottom_col {
+                width: 28%;
+                max-width: 28%;
+
+                .rent_type {
+                    .subtitle_box .rent_subtitle {
+                        height: 5rem;
+                    }
+                    .text_box {
+                        height: 10rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .company_box {
+        width: 25%;
+    }
+    .nav_bar {
+        width: 75%;
+    }
+    main {
+        .slogan_box {
+            .location_title {
+                padding: 1.6rem 0 1% 0;
+            }
+        }
+        .guarantee_box .guarantees .guarantee {
+            width: 80%;
+            margin: 0 auto;
+            justify-content: center;
+
+                .left_col {
+                    width: 8%;
+                    margin: 0 1rem 1.5rem 0;
+
+                    .guarantee—icon {
+                        width: 3.1rem;
+                        max-width: 3.1rem;
+                        height: 3.1rem;
+                        max-height: 3.1rem;
+                        padding: .4rem .3rem .3rem .4rem;
+                    }
+                }
+                .right_col {
+                    width: 88%;
+                    margin: 0 0 1.5rem 0;
+
+                    .guarantee—subtitle {
+                        font-size: 1.1rem;
+                        line-height: 1.6rem;
+                        font-weight: 600;
+                    }
+                    .guarantee—text {
+                        font-size: 1rem;
+                        line-height: 1.3rem;
+                    }
+                }
+        }
+        .video_box {
+            .video_and_cap {
+                width: 70%;
+            }
+        }
+        .players_box .sales {
+            width: 90%;
+            max-width: 90%;
+
+            .player_card {
+                width: 28%;
+                max-width: 28%;
+
+                .name_section {
+                    height: 3.4rem;
+                }
+            }
+        }
+        .rent_box .rental {
+            width: 90%;
+            max-width: 90%;
+
+            .top_col,
+            .mid_col,
+            .bottom_col {
+                width: 28%;
+                max-width: 28%;
+
+                .rent_type {
+                    .subtitle_box .rent_subtitle {
+                        height: 5rem;
+                    }
+                    .text_box {
+                        height: 10rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1281px) {
+    .header, .header_list, main, .page_footer {
+        border-right: 2px solid #4F3749;
+        border-left: 2px solid #4F3749;
+    }
+}
+
+@media (min-height: 568px) {
+    main {
+        .title {
+            padding: .4rem 0 .8rem 0;
+
+            .main_title {
+                font-size: 2rem;
+                letter-spacing: 2px;
+            }
+            .sub_title {
+                font-size: 1.4rem;
+                letter-spacing: 1px;
+            }
+        }
+        .slogan_box {
+            padding: 1.6rem 0 1.8rem 0;
+
+            .main_slogan {
+                font-size: 1.6rem;
+                letter-spacing: 2px;
+            }
+            .sub_slogan {
+                font-size: 1.1rem;
+                letter-spacing: 1px;
+                margin-top: .4rem;
+            }
+            .location_title {
+                font-size: 1.1rem;
+                letter-spacing: 0;
+            }
+        }
+    }
+}
+@media (min-height: 600px) {
+    main {
+        .title {
+            padding: .4rem 0 .8rem 0;
+
+            .main_title {
+                font-size: 2rem;
+                letter-spacing: 2px;
+            }
+            .sub_title {
+                font-size: 1.6rem;
+                letter-spacing: 2px;
+            }
+        }
+        .slogan_box {
+            padding: 1.6rem 0 1.8rem 0;
+
+            .main_slogan {
+                font-size: 1.8rem;
+                letter-spacing: 2px;
+            }
+            .sub_slogan {
+                font-size: 1.3rem;
+                letter-spacing: 2px;
+            }
+            .location_title {
+                font-size: 1.3rem;
+                letter-spacing: 0;
+                padding: 1.6rem 0 1% 0;
+            }
+        }
+    }
+}
+@media (min-height: 768px) and (min-width:  768px) {
+    main {
+        .title {
+            padding: .4rem 0 .8rem 0;
+
+            .main_title {
+                font-size: 2rem;
+                letter-spacing: 2px;
+            }
+            .sub_title {
+                font-size: 1.6rem;
+                letter-spacing: 2px;
+            }
+        }
+        .slogan_box {
+            padding: 1.6rem 0 1.8rem 0;
+
+            .main_slogan {
+                font-size: 2rem;
+                letter-spacing: 2px;
+            }
+            .sub_slogan {
+                font-size: 1.6rem;
+                letter-spacing: 2px;
+            }
+            .location_title {
+                font-size: 1.3rem;
+                letter-spacing: 0;
+                padding: 2.4rem 0 1% 0;
+            }
+        }
+        .guarantee_box {
+            width: 100%;
+            max-width: 100%;
+            background: rgba(156, 144, 84, 0.2);
+
+            .guarantees {
+                justify-content: space-between;
+                width: 84%;
+                max-width: 84%;
+                margin: 1rem auto;
+                padding: 2.2rem .4rem 1.2rem .4rem;
+                background: white;
+                border: 1px solid #4F3749;
+                //border-right: 1px solid #4F3749;
+                //border-bottom: 4px solid #4F3749;
+                //border-left: 4px solid #4F3749;
+                border-radius: 12px;
+                //box-shadow: $shadow;
+
+                .guarantee {
+                    width: 90%;
+                    max-width: 90%;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    align-content: space-between;
+                    margin: 0 auto;
+
+                    .left_col {
+                        width: 10%;
+                        margin: 0 1rem 1.2rem 0;
+                    }
+                    .right_col {
+                        width: 86%;
+                        margin: 0 0 1.2rem 0;
+                    }
+                }
+            }
+        }
+        .video_box .video_and_cap {
+            width: 86%;
+
+            figcaption {
+                width: 90%;
+                max-width: 90%;
+                padding: .5rem 0;
+                font-size: 1.1rem;
+                letter-spacing: 1px;
+            }
+        }
+        .location_box .address_box .map {
+            height: 24rem;
+        }
+    }
+}
+@media (min-height: 800px) and (min-width: 810px) {
+    main {
+        .location_box .address_box {
+            .map {
+                width: 74%;
+                max-width: 74%;
+                height: 29rem;
+            }
+            .address p {
+                padding: 0 0 .8rem 0;
+            }
+        }
+    }
+}
+@media (min-height: 800px) and (min-width: 896px) {
+    main {
+        .location_box .address_box {
+            .map {
+                width: 74%;
+                max-width: 74%;
+                height: 29rem;
+            }
+            .address {
+                width: 19%;
+                max-width: 19%;
+            }
+        }
+    }
+}
+@media (min-height: 800px) and (min-width: 926px) {
+    main {
+        .location_box .address_box {
+            .map {
+                width: 75%;
+                max-width: 75%;
+                height: 31rem;
+            }
+            .address {
+                width: 21%;
+                max-width: 21%;
+
+                p {
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}
+@media (min-height: 800px) and (min-width: 1280px) {
+    main {
+        .image_box {
+            max-height: 26.5rem;
+            overflow: hidden;
+
+            .deck_img {
+                margin: -2.5rem auto 0 auto;
+            }
+        }
+        .slogan_box {
+            .location_title {
+                padding: 1.6rem 0 1% 0;
+            }
+        }
+        .guarantee_box .guarantees {
+            width: 66%;
+
+            .guarantee .left_col {
+                width: 8%;
+                max-width: 8%;
+            }
+            .guarantee .right_col {
+                width: 88%;
+                max-width: 88%;
+
+                .guarantee—subtitle {
+                    font-size: 1.25rem;
+                }
+                .guarantee—text {
+                    font-size: 1.1rem;
+                    line-height: 1.55rem;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+        .video_box .video_and_cap {
+            width: 80%;
+            max-width: 80%;
+        }
+        .players_box .sales {
+            width: 80%;
+            max-width: 80%;
+
+            .player_card {
+                .name_section {
+                    letter-spacing: 1px;
+                }
+                .info_section {
+                    height: 7.8rem;
+
+                    p {
+                        font-size: 1rem;
+                        line-height: 1.4rem;
+                    }
+                }
+                .select_footer button {
+                    height: 44px;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        .rent_box .rental {
+            width: 80%;
+            max-width: 80%;
+
+            .top_col,
+            .mid_col,
+            .bottom_col {
+                .rent_type {
+                    .title_box .rent_title {
+                        width: 75%;
+                        max-width: 75%;
+                        letter-spacing: 1px;
+                    }
+                    .text_box {
+                        height: 11.8rem;
+
+                        .rent_text {
+                            font-size: 1rem;
+                            line-height: 1.4rem;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+                button {
+                    height: 44px;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        .location_box .address_box {
+            .map {
+                width: 77%;
+                max-width: 77%;
+                height: 31rem;
+            }
+            .address {
+                width: 16%;
+                max-width: 16%;
+
+                p {
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}

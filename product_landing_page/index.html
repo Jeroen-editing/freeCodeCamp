@@ -11,160 +11,254 @@
 </head>
 <body>
 
-    <header class="nav_header" id="header">
-        <a href="index.html" class="company">
-            <img src="assets/icons/dj_01.png" alt="" class="company_logo" id="header-img">
-            <h2 class="company_name">the Pro Player Company</h2>
-        </a>
-        <nav class="nav_bar" id="nav-bar">
-            <a href="#rent" class="nav-link">Rent a DJ set</a>
-            <p>&#8212;</p>
-            <a href="#sales" class="nav-link">Best Sales</a>
-            <p>&#8212;</p>
-            <a href="" class="nav-link">Short survey</a>
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="company_box">
+                <img src="assets/icons/homepage_03_green.png" alt="" class="home_icon comp_visible" id="home_icon">
+                <a href="index.html" class="company comp_hidden" id="company_name">
+                    <img src="assets/icons/dj_green.png" alt="" class="company_logo" id="header-img">
+                    <h2 class="company_name">Pro Player Company</h2>
+                </a>
+            </div>
+            <div class="nav_bar" id="nav_bar">
+                <a href="#rent" class="nav_link">Rent a DJ set</a>
+                <a href="#sales" class="nav_link">Best Sales</a>
+                <a href="" class="nav_link">Our events</a>
+                <p class="menu_link" id="menu_link"><img src="assets/icons/menu_green.png" alt="" class="menu_logo" id="menu_logo"></p>
+            </div>
+        </header>
+        <header class="header_list box_hidden" id="header_list">
+            <nav class="nav_list" id="nav_list">
+                <a href="#rent" class="nav_link">Rent a DJ set</a>
+                <a href="#sales" class="nav_link">Best Sales</a>
+                <a href="" class="nav_link">Short survey</a>
+            </nav>
+            <p class="close_link" id="close_link"><img src="assets/icons/arrow_up.png" alt="" class="close_logo" id="close_logo"></p>
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <header class="title">
-            <h1>Professional DJ gear, for the real pro's!</h1>
+            <h1 class="main_title"> DJ gear</h1>
+            <h2 class="sub_title">! For the real pro's !</h2>
         </header>
 
-        <form action="https://www.freecodecamp.com/email-submit" method="POST" id="form">
-            <input type="email" name="" id="email" placeholder="Enter your email address">
-            <input type="submit" value="submit" id="submit" >
-        </form>
+        <section class="image_box">
+            <img src="assets/images/dj_set.jpg" class="deck_img" alt="">
+        </section>
 
-        <section class="garantee_box">
-            <div class="garantee">
-                <aside class="left_col">
-                    <img class="garantee—icon" src="assets/icons/material_01.png" alt="">
-                    <img class="garantee—icon" src="assets/icons/truck_01.png" alt="">
-                    <img class="garantee—icon" src="assets/icons/quality_02.png" alt="">
-                </aside>
-                <section class="right_col">
-                    <h4 class="garantee—title">Premium Materials</h4>
-                    <p class="garantee—text">Our brands are well known and only use the best materials, for proffesional use</p>
-                    <h4 class="garantee—title">Fast Shipping</h4>
-                    <p class="garantee—text">We make sure you recieve your purchases as soon as we securely packed them. We also provide free returns if you are not satisfied.</p>
-                    <h4 class="garantee—title">Quality Assurance</h4>
-                    <p class="garantee—text">For every purchase you make, we will ensure there are no damages or faults and we randomly check and test our brands regulary.</p>
-                </section>      
+        <section class="slogan_box">
+            <h2 class="main_slogan">Light equipment</h2>
+            <h3 class="sub_slogan">! For indoor and outdoor !</h3>
+            <a href="#location" class="location_title">* check our unique location *</a>
+        </section>
+
+        <section class="guarantee_box">
+            <h3 class="guarantee_title">Our sales guarantees </h3>
+            <div class="guarantees">
+                <div class="guarantee">  
+                    <div class="left_col">
+                        <img class="guarantee—icon" src="assets/icons/material_green.png" alt="">
+                    </div>
+                    <div class="right_col">
+                        <h4 class="guarantee—subtitle">Premium Materials</h4>
+                        <div class="line_under"></div>
+                        <p class="guarantee—text">Our brands are well known and only use the best materials for proffesional use.</p>
+                    </div>
+                </div>
+                <div class="guarantee">
+                    <div class="left_col">
+                        <img class="guarantee—icon" src="assets/icons/quality_green.png" alt="">
+                    </div>
+                    <div class="right_col">
+                        <h4 class="guarantee—subtitle">Quality Assurance</h4>
+                        <div class="line_under"></div>
+                        <p class="guarantee—text">For every purchase you make, we will ensure there are no damages or faults and we randomly check and test our brands regulary.</p>
+                    </div>
+                </div>
+                <div class="guarantee">
+                    <div class="left_col">
+                        <img class="guarantee—icon" src="assets/icons/delivery_green.png" alt="">
+                    </div>
+                    <div class="right_col">
+                        <h4 class="guarantee—subtitle">Fast Delivery & Shipping</h4>
+                        <div class="line_under"></div>
+                        <p class="guarantee—text">We make sure you recieve your purchases as soon as we securely packed them. We also provide free returns if you are not satisfied.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="video_box">
             <div class="video_and_cap">
-                <video src="assets/video/dj-mixing-vinyl.mp4" width="512" height="288" controls loop></video>
+                <video src="assets/video/dj-mixing-vinyl.mp4" controls></video>
                 <figcaption>We also rent professional DJ-sets for party's, festivals, etc.</figcaption>
             </div>          
         </section>
-
         <section class="players_box" id="sales">
-            <div class="player_card">
-                <header>
-                    <img src="assets/images/technics.jpg" alt="">
-                    <h2>Technics SL 1210 MK7</h2>
-                </header>
-                <section>
-                    <h3>999,- €</h3>
-                    <p>DJ's most wanted!</p>
-                    <p>Best performance in different tempratures.</p>
-                    <p>highest reaction speed.</p>
-                </section>
-                <footer class="select_footer">
-                    <button class="select" value="1">More details / Select</button>
-                </footer>
-            </div>
-            <div class="player_card">
-                <header>
-                    <img src="assets/images/pioneer.jpg" alt="">
-                    <h2>Pioneer PLX 1000</h2>
-                </header>
-                <section>
-                    <h3>675,- €</h3>
-                    <p>Best Price/Quality sale!</p>
-                    <p>Easy functionalities.</p>
-                    <p>Nice design and top performances!</p>
-                </section>
-                <footer class="select_footer">
-                    <button class="select" value="2">More details / Select</button>
-                </footer>
-            </div>
-            <div class="player_card">
-                <header>
-                    <img src="assets/images/reloop.jpg" alt="">
-                    <h2>Reloop RP 7000 MK2</h2>
-                </header>
-                <section>
-                    <h3>430,- €</h3>
-                    <p>Best sale for beginning DJ's.</p>
-                    <p>Start/Stop buttons on 2 sides.</p>
-                    <p>Reverse function and seperated buttons.</p>
-                </section>
-                <footer class="select_footer">
-                    <button class="select" value="3">More details / Select</button>
-                </footer>
+            <h3 class="sales_title">View our best sales</h3>
+            <div class="sales">
+                <div class="player_card">
+                    <header>
+                        <img src="assets/images/technics.jpg" alt="">
+                    </header>
+                    <section class="name_section">
+                        <h4>Technics SL 1210 MK7</h4>
+                    </section>
+                    <section class="price_section">
+                        <h5>999 €</h5>
+                    </section>
+                    <section class="info_section">
+                        <p>DJ's most wanted!</p>
+                        <p>Best performance in different climates & tempratures.</p>
+                        <p>Highest reaction speed.</p>
+                    </section>
+                    <footer class="select_footer">
+                        <button class="select" value="1">More details / Select</button>
+                    </footer>
+                </div>
+                <div class="player_card">
+                    <header>
+                        <img src="assets/images/pioneer.jpg" alt="">
+                    </header>
+                    <section class="name_section">
+                        <h4>Pioneer PLX 1000</h4>
+                    </section>
+                    <section class="price_section">
+                        <h5>675 €</h5>
+                    </section>
+                    <section class="info_section">
+                        <p>Best Price/Quality sale!</p>
+                        <p>Easy functionalities.</p>
+                        <p>Top performances and nice design!</p>
+                    </section>
+                    <footer class="select_footer">
+                        <button class="select" value="2">More details / Select</button>
+                    </footer>
+                </div>
+                <div class="player_card">
+                    <header>
+                        <img src="assets/images/reloop.jpg" alt="">
+                    </header>
+                    <section class="name_section">
+                        <h4>Reloop RP 7000 MK2</h4>
+                    </section>
+                    <section class="price_section">
+                        <h5>430 €</h5>
+                    </section>
+                    <section class="info_section">
+                        <p>Best sale for beginning DJ's.</p>
+                        <p>Start/Stop buttons on 2 sides.</p>
+                        <p>Reverse function and seperated buttons.</p>
+                    </section>
+                    <footer class="select_footer">
+                        <button class="select" value="3">More details / Select</button>
+                    </footer>
+                </div>
             </div>
         </section>
 
         <section class="rent_box" id="rent">
-            <h2>We also have professional DJ gear for rent</h2>
+            <h3 class="rent_title">Our professional DJ gear for rent</h3>
             <div class="rental">
                 <section class="top_col">
-                    <a href="" class="rent_link">
+                    <header class="photo_box">
                         <img class="rent_photo" src="assets/images/flightcase_01.jpg" alt="">
-                        <button class="select" value="1">More details / Select</button>
-                    </a>
+                    </header>
                     <div class="rent_type">
-                        <h5 class="rent_pretitle">Type I</h5>
-                        <h3 class="rent_title">Odyssey FZBM10W Flight Zone</h3>
-                        <h5 class="rent_subtitle">2 turntables and soundmixer.</h5>
-                        <p class="rent_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sed ipsa ea. Sed, deleniti perferendis. Maiores, delectus. Quibusdam, porro nam!</p>
+                        <div class="pretitle_box"><h5 class="rent_pretitle">Type I</h5></div>
+                        <div class="title_box"><h4 class="rent_title">Odyssey FZBM10W Flight Zone</h4></div>
+                        <div class="subtitle_box"><h5 class="rent_subtitle">2 turntables and a soundmixer.</h5></div>
+                        <div class="text_box">
+                            <p class="rent_text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                            <p class="rent_text"> 
+                                Laudantium sed ipsa ea. Sed, deleniti perferendis. Maiores, delectus. Quibusdam, porro nam!
+                            </p>
+                        </div>
                     </div>
+                    <button class="select" value="1">More details / Select</button>
                 </section>
                 <section class="mid_col">
-                    <a href="" class="rent_link">
-                        <img class="rent_photo" src="assets/images/flightcase_02.jpg" alt="">
-                        <button class="select" value="1">More details / Select</button>
-                    </a>
+                    <header class="photo_box">
+                        <img class="rent_photo" src="assets/images/flightcase_02.jpg" alt="">   
+                    </header>
                     <div class="rent_type">
-                        <h5 class="rent_pretitle">Type II</h5>
-                        <h3 class="rent_title">Odyssey FFXGSLBM12WBL Black Label</h3>
-                        <h5 class="rent_subtitle">2 turntables, soundmixer and laptop.</h5>
-                        <p class="rent_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam nostrum quaerat, corporis quisquam fugit placeat magnam dolorem minima similique aspernatur.</p>
+                        <div class="pretitle_box"><h5 class="rent_pretitle">Type II</h5></div>
+                        <div class="title_box"><h4 class="rent_title">Odyssey FFXGSLBM12WBL Black Label</h4></div>
+                        <div class="subtitle_box"><h5 class="rent_subtitle">2 turntables, a soundmixer and a laptop.</h5></div>
+                        <div class="text_box">
+                            <p class="rent_text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                            <p class="rent_text">
+                                Totam nostrum quaerat, corporis quisquam fugit placeat magnam dolorem minima similique aspernatur.
+                            </p>
+                        </div>
                     </div>
+                    <button class="select" value="1">More details / Select</button>
                 </section>
                 <section class="bottom_col">
-                    <a href="" class="rent_link">
+                    <header class="photo_box">
                         <img class="rent_photo" src="assets/images/flightcase_03.jpg" alt="">
-                        <button class="select" value="1">More details / Select</button>
-                    </a>
+                    </header>
                     <div class="rent_type">
-                        <h5 class="rent_pretitle">Type III</h5>
-                        <h3 class="rent_title">Odyssey FZGSPBM10WBL Black Label</h3>
-                        <h5 class="rent_subtitle">2 turntables, soundmixer, laptop, lightmixer,...</h5>
-                        <p class="rent_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fuga voluptates unde ullam placeat dolore omnis cumque modi quis quasi!</p>
+                        <div class="pretitle_box"><h5 class="rent_pretitle">Type III</h5></div>
+                        <div class="title_box"><h4 class="rent_title">Odyssey FZGSPBM10WBL Black Label</h4></div>
+                        <div class="subtitle_box"><h5 class="rent_subtitle">2 turntables, a soundmixer, a laptop and a lightmixer.</h5></div>
+                        <div class="text_box">
+                            <p class="rent_text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            </p>    
+                            <p class="rent_text">  
+                                Voluptatum fuga voluptates unde ullam placeat dolore omnis cumque modi quis quasi!
+                            </p>
+                        </div>
                     </div>
+                    <button class="select" value="1">More details / Select</button>
                 </section> 
             </div>
         </section>
-    </main>
 
+        <section class="location_box" id="location">
+            <h3 class="location_title">Visit our unique location</h3>
+            <div class="address_box">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2477.4496019598196!2d4.402734445514228!3d51.21892832507483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f6f7a5c430ef%3A0x1d7644ab1d308808!2sInfo%20Cathedral%2C%20Onze-Lieve-Vrouwekathedraal%20Antwerpen%2C%20Groenplaats%2021%2C%202000%20Antwerpen!5e0!3m2!1snl!2sbe!4v1658841735359!5m2!1snl!2sbe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="address">
+                    <p class="street">Groenplaats 1,</p>
+                    <p class="town">2000 Antwerp,</p>
+                    <p class="region">Antwerp,</p>
+                    <p class="land">Belgium</p>
+                    <p class="phone">+32(0)466 44 66 44</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <form action="https://www.freecodecamp.com/email-submit" method="POST" id="form">
+            <label for="email" class="email_label">Subscribe to our calender</label>
+            <div class="form_inputs">
+                <input type="email" name="email" id="email" placeholder="Enter your email address">
+                <input type="submit" value="send" id="submit">
+            </div>
+            
+        </form>
+    </main>
     <footer class="page_footer">
-        <div class="developer">
-            <p class="name">Antwerp,&nbsp;</p>
-            <p class="time" id="time"></p>
-            <p>&nbsp;-&nbsp;</p>
-            <a href="" class="name">Jeroen De Vos</a>
-        </div>
-        <div class="officials">
-            <a href="">terms of use</a>
-            <p>&nbsp;,&nbsp;&nbsp;</p>
-            <a href="">privacy policy</a>
-        </div>
-        
+        <nav class="footer_nav">
+           <div class="developer">
+                <p class="name">Antwerp,&nbsp;</p>
+                <p class="time" id="time"></p>
+            </div>
+            <div class="officials">
+                <a href="">terms of use</a>
+                <a href="">privacy policy</a>
+            </div> 
+        </nav>
+          
     </footer>
-    <script src="copyRights.js"></script>
+    
+    <script src="dynamics.js"></script>
 </body>
 </html>

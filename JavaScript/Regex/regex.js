@@ -1,3 +1,4 @@
+/*
 // Using the Test Method
 // ---------------------
 let myString = "Hello, World!";
@@ -61,3 +62,4 @@ let quoteSample = "Beware of bugs in the above code; I have only proved it corre
 let vowelRegex = /[aeiou]/gi;
 // let result = vowelRegex; // Change this line
 let result = quoteSample.match(vowelRegex);
+*/

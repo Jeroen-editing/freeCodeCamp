@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Introduction</title>
 
     <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Harmattan:wght@400;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Metrophobic&family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
 
     <style>
-        @media (min-width: 30em) and (max-width: 50em) {
-            body {
-                max-width: 1280px;
+        @media (max-width: 1440px) {
+            img {
+                max-width: 380px;
             }
         }
     </style>
@@ -32,14 +29,14 @@
             <a href="#Global_variables" class="nav-link">Global variables</a>
             <a href="#Constants" class="nav-link">Constants</a>
             <a href="#Data_types" class="nav-link">Data types</a>
-            <a href="#if_else_statement" class="nav-link">if ... else statement</a>
+            <a href="#if_..._else_statement" class="nav-link">if ... else statement</a>
             <a href="#while_statement" class="nav-link">while statement</a>
             <a href="#Function_declarations" class="nav-link">Function declarations</a>
             <a href="#Reference" class="nav-link">Reference</a>
         </nav>
     </aside>
 
-    <header class="main-header">
+    <header class="header">
         <h1 class="page_title">
             All about JavaScript
         </h1>
@@ -49,7 +46,6 @@
             <header>
                 <h2>Introduction</h2>
             </header>
-            <article>
                 <p class="text">
                     JavaScript is a cross-platform, object-oriented scripting language. It is a small 
                     and lightweight language. Inside a host environment (for example, a web browser), 
@@ -83,15 +79,16 @@
                         </p>
                     </li>
                 </ul>
-            </article>
+                <video src=""></video>
         </section>
         <section class="main-section" id="What_you_should_already_know">
             <header>
                 <h2>What you should already know</h2>
             </header>
-            <article>
                 <p class="text">
                     This guide assumes you have the following basic background:
+                </p>
+                <p class="text">
                 </p>
                 <ul class="list">
                     <li>
@@ -114,13 +111,11 @@
                         </p>
                     </li>
                 </ul>
-            </article>
         </section>
         <section class="main-section" id="JavaScript_and_Java">
             <header>
                 <h2>JavaScript and Java</h2>
             </header>
-            <article>
                 <p class="text">
                     JavaScript and Java are similar in some ways but fundamentally different in some others. 
                     The JavaScript language resembles Java but does not have Java's static typing and strong 
@@ -143,7 +138,7 @@
                     methods are public, private, or protected, and you do not have to implement interfaces. 
                     Variables, parameters, and function return types are not explicitly typed. 
                 </p>
-            </article>
+                <iframe src="https://www.tutorialrepublic.com/javascript-tutorial/"></iframe>
         </section>
         <section class="main-section" id="Hello_world">
             <header>
@@ -165,13 +160,53 @@
                 <p class="text">
                     Select the code in the pad and hit Ctrl+R to watch it unfold in your browser! 
                 </p>
-            </article>
+                </article>
+                <table>
+                  <tbody>
+                      <tr>
+                          <td> 
+                            <code>
+                                x = 5;
+                                y = 6;
+                                z = x + y;
+                            </code> 
+                          </td>
+                          <td> 
+                            <code>
+                                x = 5;
+                                y = 6;
+                                z = x + y;
+                            </code> 
+                          </td>
+                          <td> 
+                            <code>
+                                x = 5;
+                                y = 6;
+                                z = x + y;
+                            </code> 
+                          </td>
+                          <td> 
+                            <code>
+                                x = 5;
+                                y = 6;
+                                z = x + y;
+                            </code> 
+                          </td>
+                          <td> 
+                            <code>
+                                x = 5;
+                                y = 6;
+                                z = x + y;
+                            </code> 
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
         </section>
         <section class="main-section" id="Variables">
             <header>
                 <h2>Variables</h2>
             </header>
-            <article>
                 <p class="text">
                     You use variables as symbolic names for values in your application. The names of 
                     variables, called identifiers, conform to certain rules. 
@@ -187,13 +222,11 @@
                     use the Unicode escape sequences as characters in identifiers. Some examples of legal 
                     names are Number_hits, temp99, and _name. 
                 </p>
-            </article>
         </section>
         <section class="main-section" id="Declaring_variables">
             <header>
                 <h2>Declaring variables</h2>
             </header>
-            <article>
                 <p class="text">
                     You can declare a variable in three ways: 
                 </p>
@@ -232,13 +265,12 @@
                     This syntax can be used to declare a block scope local variable. See Variable 
                     scope below.
                 </p>
-            </article>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="">
         </section>
         <section class="main-section" id="Variable_scope">
             <header>
                 <h2>Variable scope</h2>
             </header>
-            <article>
                 <p class="text">
                     When you declare a variable outside of any function, it is called a global variable,
                      because it is available to any other code in the current document. When you declare 
@@ -265,12 +297,11 @@
                         if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined
                     </p>
                 </div>
-            </article>
         </section>
         <section class="main-section" id="Global_variables">
             <header>
                 <h2>Global variables</h2>
-            </header><article>
+            </header>
                 <p class="text">
                     Global variables are in fact properties of the global object. In web pages the 
                     global object is window, so you can set and access global variables using the 
@@ -282,13 +313,11 @@
                     variable called phoneNumber is declared in a document, you can refer to this variable 
                     from an iframe as parent.phoneNumber. 
                 </p>
-            </article>
         </section>
         <section class="main-section" id="Constants">
             <header>
                 <h2>Constants</h2>
             </header>
-            <article>
                 <p class="text">
                     You can create a read-only, named constant with the const keyword. The syntax of a constant 
                     identifier is the same as for a variable identifier: it must start with a letter, underscore 
@@ -336,13 +365,11 @@
                         const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";
                     </p>
                 </div>
-            </article>
         </section>
         <section class="main-section" id="Data_types">
             <header>
                 <h2>Data types</h2>
             </header>
-            <article>
                 <p class="text">
                     The latest ECMAScript standard defines seven data types:
                 </p>
@@ -354,7 +381,7 @@
                         </p>
                     </li>
                     <li>
-                        <ul class="inside_list">
+                        <ol class="inside_list">
                             <li>
                                 <img src="assets/square_empty.png" alt="">
                                 <table>
@@ -445,7 +472,7 @@
                                     </tr>
                                 </table>
                             </li>
-                        </ul>
+                        </ol>
                     </li>
                     <li>
                         <img src="assets/square_full.png" alt="">
@@ -460,13 +487,11 @@
                     You can think of objects as named containers for values, and functions as procedures that your 
                     application can perform. 
                 </p>
-            </article>
         </section>
-        <section class="main-section" id="if_else_statement">
+        <section class="main-section" id="if_..._else_statement">
             <header>
                 <h2>if ... else statement</h2>
             </header>
-            <article>
                 <p class="text">
                     Use the if statement to execute a statement if a logical condition is true. Use the optional else 
                     clause to execute a statement if the condition is false. An if statement looks as follows: 
@@ -534,13 +559,11 @@
                         if ((x = y)) { /* statements here */ }
                     </p>
                 </div>
-            </article>
         </section>
         <section class="main-section" id="while_statement">
             <header>
                 <h2>while statement</h2>
             </header>
-            <article>
                 <p class="text">
                     A while statement executes its statements as long as a specified condition evaluates to true. 
                     A while statement looks as follows: 
@@ -600,13 +623,11 @@
                 <p class="text extra_marg">
                     After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.
                 </p>
-            </article>
         </section>
         <section class="main-section" id="Function_declarations">
             <header>
                 <h2>Function declarations</h2>
             </header>
-            <article>
                 <p class="text">
                     A function definition (also called a function declaration, or function statement) consists of 
                     the function keyword, followed by:
@@ -654,22 +675,22 @@
                     to the function, but if the function changes the value of the parameter, this change is not 
                     reflected globally or in the calling function.
                 </p>
-            </article>
+                <footer>
+                  <p>Lorum Ipsum</p>
+</footer>
         </section>
         <section class="main-section bottom_section" id="Reference">
             <header>
                 <h2>Reference</h2>
             </header>
-            <article>
                 <p class="text">
                     All the documentation in this page is taken from 
                     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a>.
                 </p>
-            </article>
         </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="footer">
         <div class="rights">
             <p class="copy_rights" id="copyRights"></p>
             <p class="dev_links">
@@ -684,4 +705,3 @@
     
     <script src="copyRights.js"></script>
 </body>
-</html>

@@ -9,12 +9,13 @@ $second_font:'MuseoModerno';
     padding: 0 0;
 }
 
-body, header {
+body, main {
     width: 100%;
     margin: 0 auto;
 }
 
-.main_title, .sub_title {
+#title, .sub_title {
+    width: 100%;
     margin: 20px auto;
     padding: 18px 0;
     color: $text_color;
@@ -40,31 +41,35 @@ body, header {
         font-weight: 300;
     }
 }
-.main_photo {
-    display: block;
+#img-div {
     width: 100%;
     margin-top: 48px;
-
-    #img, figcaption {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 60%;
-        margin: 0 auto;
-    }
-    #img {
-        padding: 8px 0;
-        border-top: 1px solid rgba($text_color, 0.4);
-        border-bottom: 1px solid rgba($text_color, 0.4);
-    }
-    figcaption {
-        padding: 12px 0 4px 0;
-        color: $text_color;
-        font-family: $second_font;
-        font-size: 15px;
-        font-weight: 200;
-        text-align: center;
-    }
+}
+img {
+    display: block;
+}
+#image {
+    display: block;
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 8px 0;
+    border-top: 1px solid rgba($text_color, 0.4);
+    border-bottom: 1px solid rgba($text_color, 0.4);
+}
+#img-caption {
+    display: block;
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 12px 0 4px 0;
+    color: $text_color;
+    font-family: $second_font;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
 }
 
 section {
@@ -104,6 +109,26 @@ section {
             font-weight: 500;
         }
     }
+    #link-footer {
+        width: 100%;
+        padding: 26px 0 16px 0;
+    
+        h5 {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            color: $text_color;
+            font-family: $main_font;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 700;
+    
+            #tribute-link {
+                color: rgb(79, 128, 201);
+                font-family: $main_font;
+            }
+        }
+    }
 }
 
 .listFooter {
@@ -123,28 +148,6 @@ section {
         }
         .quote {
             border-bottom: 1px solid rgba($text_color, 0.4);
-        }
-    }
-}
-
-
-footer {
-    width: 100%;
-    padding: 26px 0 16px 0;
-    background: rgba($base_color, 0.28);
-
-    h5 {
-        width: 60%;
-        margin: 0 auto;
-        color: $text_color;
-        font-family: $main_font;
-        text-align: center;
-        font-size: 20px;
-        font-weight: 700;
-
-        a {
-            color: rgb(79, 128, 201);
-            font-family: $main_font;
         }
     }
 }

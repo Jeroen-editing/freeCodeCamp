@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <section>
+        <h2>Your Cart</h2>
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="A Rubiks's cube 3-D puzzle with the 3 horizontal layers rotated.">
+    </section>
+    <section>
+        <h2>Payment Information</h2>
+        <form>
+            <legend>Necessary payment information:</legend>
+            <label for="card-name"><span aria-hidden="true">*</span>Card name:</label>
+            <input type="text"  name="card-name" id="card-name" required>
+            <label for="card-number"><span aria-hidden="true">*</span>Card number:</label>
+            <input type="text"  name="card-number" id="card-number" required aria-describedby="card-number-help">
+            <p id="card-number-help">Your card number should consist of 3 numbers a dash 5 numbers a dash and 3 control numbers (xxx-xxxxx-xxx)</p>
+        </form>
+    </section>
+</body>
+
+</html>

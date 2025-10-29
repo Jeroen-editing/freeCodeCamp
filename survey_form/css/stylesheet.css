@@ -76,6 +76,7 @@ main {
         font-size: 16px;
         font-weight: 400; }
       main form fieldset input[type=text],
+      main form fieldset input[type=email],
       main form fieldset input[type=number],
       main form fieldset textarea {
         display: block;
@@ -86,6 +87,8 @@ main {
         border: 2px solid rgba(62, 161, 62, 0);
         border-radius: 3px; }
         main form fieldset input[type=text]:focus, main form fieldset input[type=text]:hover,
+        main form fieldset input[type=email]:focus,
+        main form fieldset input[type=email]:hover,
         main form fieldset input[type=number]:focus,
         main form fieldset input[type=number]:hover,
         main form fieldset textarea:focus,
@@ -95,8 +98,15 @@ main {
           outline: none;
           border: 2px solid #3ea13e; }
       main form fieldset input[type=text],
+      main form fieldset input[type=email],
       main form fieldset input[type=number] {
-        height: 26px; }
+        height: 22px; }
+        main form fieldset input[type=text]::placeholder,
+        main form fieldset input[type=email]::placeholder,
+        main form fieldset input[type=number]::placeholder {
+          font-size: 12px;
+          color: darkgreen;
+          opacity: .8; }
       main form fieldset input[type=radio] {
         height: 24px;
         transform: scale(1.25); }

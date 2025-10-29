@@ -1,0 +1,99 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+}
+body {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 0;
+    font-family: 'Georama', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    text-align: center;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    max-width: 1240px;
+    display: flex;
+    flex-direction: row;
+    height: 2rem;
+    top: 0;
+    margin: 0 auto;
+    padding: 0 0;
+    border-bottom: 1px solid olive;
+}
+nav a {
+    width: 33%;
+    margin: 0 auto;
+    padding: .4rem 0 0 0;
+    text-decoration: none;
+    color: olive;
+}
+header {
+    width: 100%;
+    max-width: 1240px;
+    margin: 2rem auto 0 auto;
+    padding: 1.4rem 0 1.8rem 0;
+    color: white;
+    background: rgb(154, 154, 5);
+    border-bottom: 1px solid olive;
+}
+header h1 {
+    margin: 0 auto 1rem auto;
+    font-family: 'Jura', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 300;
+}
+header h4 {
+    font-family: 'Georama', sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+}
+header h4 a {
+    color: rgb(58, 80, 97);
+    font-weight: 300;
+    text-decoration: none;
+}
+main {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 0;
+}
+main section {
+    margin: 0 auto;
+    padding: 1.6rem 0 2rem 0;
+    border-bottom: 1px solid olive;
+}
+main section a, main section p {
+    margin: 0 auto;
+    padding: .4rem 0;
+}
+main section a {
+    color: olive;
+    text-decoration: none;
+}
+footer {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 1rem 0 1.4rem 0;
+    background: rgba(154, 154, 5, 0.3);
+    border-bottom: 1px solid olive;
+}
+footer h6 {
+    margin: 0 auto;
+    padding: .4rem 0;
+    font-family: 'Georama', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    text-align: center;
+}
+footer h6 a {
+    color: olive;
+    text-decoration: none;
+}

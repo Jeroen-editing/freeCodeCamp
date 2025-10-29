@@ -94,7 +94,9 @@ main {
                 font-size: 16px;
                 font-weight: 400;
             }
+        
             input[type=text],
+            input[type=email],
             input[type=number],
             textarea {
                 display: block;
@@ -113,8 +115,15 @@ main {
                 }
             }
             input[type=text],
+            input[type=email],
             input[type=number] {
-                height: 26px;
+                height: 22px;
+
+                &::placeholder {
+                    font-size: 12px;
+                    color: darkgreen;
+                    opacity: .8;
+                }
             }
             input[type=radio] {
                 height: 24px;

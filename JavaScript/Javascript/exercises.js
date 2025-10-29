@@ -357,27 +357,15 @@ output = beagle.numLegs;
 
 function Dog(name) {
     this.name = name;
-}
-  
-Dog.prototype.numLegs = 4;
-  
+}  
+Dog.prototype.numLegs = 4; 
 let beagle = new Dog("Snoopy");
   
 let ownProps = [];
 let prototypeProps = [];
+for(let property in beagle) {
+    beagle.hasOwnProperty(property) ? ownProps.push(property) : prototypeProps.push(property);
+}
 
-//for (let property in beagle) {
-//    if (beagle.hasOwnProperty(property)) {
-//        ownProps.push(property);
-//    } else {
-//        prototypeProps.push(property);
-//    }
-//}
-for (let property in beagle) {
-    beagle.hasOwnProperty(property) ? ownProps.push(property) : prototypeProps.push(property)
-};
-output = "Own: " + ownProps + ". Prototype: " + prototypeProps + ".";
-
-
-
+output = "Own propertys: " + ownProps + ".<br> Prototype propertys: " + prototypeProps + ".";
 input_box.innerHTML = output;

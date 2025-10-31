@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+}
+
+.blog-post-card {
+    width: 50%;
+    max-width: 50%;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.post-img {
+    width: 100%;
+    border-bottom: 4px solid teal;
+}
+.post-content {
+    width: 75%;
+    padding: 4% 4% 4% 14%;
+    text-align: left;
+}
+.post-title, .post-excerpt {
+    margin: 4px;
+    color: teal;
+}
+.read-more {
+    display: inline-block;
+    margin: 4px;
+    padding: 6px 10px 4px 10px;
+    color: white;
+    text-decoration: none;
+    background: darkslateblue;
+    border-radius: 8px;
+}
+.read-more:hover {
+    color: black;
+    background: lightskyblue;
+}

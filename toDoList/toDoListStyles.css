@@ -14,3 +14,9 @@
 .sub-item-link:active {
     color: orangered;
 }
+ul li::marker {
+    color: teal;
+}
+ol li::marker {
+    color: darkgoldenrod;
+}

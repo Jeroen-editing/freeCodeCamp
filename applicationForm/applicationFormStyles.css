@@ -1,0 +1,50 @@
+.container {
+    width: 22vw;
+    margin: 0 auto;
+}
+label {
+    display: block;
+    margin: 20px auto;
+}
+fieldset {
+    margin: 20px auto;
+}
+fieldset label {
+     display: inline;
+}
+input:focus,
+textarea:focus {
+    border-color: darkgoldenrod;
+}
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: red;
+}
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: green;
+}
+input,
+select,
+textarea {
+    margin: 0 auto;
+    border: 1px solid gray;
+}
+button:hover {
+    background-color: lightseagreen;
+}
+.radio-group input[type="radio"]:checked {
+    border-color: purple;
+    background-color: yellow;
+    box-shadow: 0 0 2px green;
+}
+.radio-group input[type="radio"]:checked + label {
+    color: green;
+}
+input:first-of-type {
+    border-radius: 8px;
+    color: hsl(0, 75%, 25%);
+    color: hsl(from color h s l);
+}

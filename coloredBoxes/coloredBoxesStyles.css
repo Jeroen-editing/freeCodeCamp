@@ -1,0 +1,28 @@
+body {
+    background: #f4f4f4;
+}
+.color-box {
+    width: 360px;
+    height: 100px;
+    margin: 0 auto;
+    border-right: 2px solid darkgray;
+    border-left: 2px solid darkgray;
+}
+.color1 {
+    background-color: #390000;
+    border-top: 2px solid darkgray;
+}
+.color2 {
+    background-color: rgb(95, 0, 0);
+}
+.color3 {
+    background-color: rgb(153, 0, 0);
+}
+.color4 {
+    background-color: hsl(0, 99%, 38%);
+}
+.color5 {
+    background: linear-gradient(rgb(201, 0, 0), rgb(221, 0, 0), red);
+    border-bottom: 2px solid darkgray;
+    color: hsl(255, 100%, 0%);
+}

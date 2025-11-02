@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<script src="" defer></script>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Give a summary about your website in teh meta:description content attr-->
+    <!--<meta name="description" content="">-->
+    <!--Look for the og's og:title, og:description, og:image, og:url, og:type og:site_name og:locale-->
+    <title>Greeting Card</title>
+    <link href="applicationFormStyles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <label for="name">Full-Name:</label>
+            <input type="text" name="name" id="name" minlength="3">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <label for="position">Your position in the company:</label>
+            <select name="" id="position">
+                <option value="empty">Choose your role....</option>
+                <option value="disigner">Designer</option>
+                <option value="fullStack">Full-stack developer</option>
+                <option value="frontEnd">Front-end developer</option>
+                <option value="backEnd">Back-end developer</option>
+                <option value="scrumLeader">Scrum leader</option>
+                <option value="manager">Project manager</option>
+            </select>
+            <fieldset class="radio-group">
+                <input type="radio" name="availability" id="full-time">
+                <label for="full-time">Full-Time.</label>
+                <input type="radio" name="availability" id="part-time">
+                <label for="part-time">Part-Time.</label>
+                <input type="radio" name="availability" id="freelance">
+                <label for="freelance">Freelance.</label>
+                <input type="radio" name="availability" id="temporary">
+                <label for="temporary">Temporary.</label>
+            </fieldset>
+            <label for="message">Sens us a message:</label>
+            <textarea name="message" id="message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

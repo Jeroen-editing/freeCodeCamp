@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Give a summary about your website in teh meta:description content attr-->
+    <meta name="description" content="">
+    <!--Look for the og's og:title, og:description, og:image, og:url, og:type og:site_name og:locale-->
+    <title>Registration Form</title>
+    <link href="registrationFormStyles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form action="https://register-demo.freecodecamp.org" method="post">
+        <fieldset>
+            <legend>Personal info & password set-up :</legend>
+            <label for="first-name">Enter Your First Name: <input type="text" id="first-name" name="your-name" required></label>
+            <label for="last-name">Enter Your Last Name: <input type="text" id="last-name" name="surname" required></label>
+            <label for="email">Enter Your Email: <input type="email" name="mail" id="email" required></label>
+            <label for="new-password">Create a New Password: <input type="password" name="psswd" id="new-password" required pattern="[a-z0-5]{8,}"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Account type (required) :</legend>
+            <label for="personal-account" class="radiolabel">Personal: <input class="inline" type="radio" name="account-type" value="personal" id="personal-account" checked></label>
+            <label for="business-account" class="radiolabel">Business: <input class="inline" type="radio" name="account-type" value="business" id="business-account"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Extra Info :</legend>
+            <label for="profile-picture">Upload a profile picture: <input type="file" name="photo" id="profile-picture"></label>
+            <label for="age">Input your age (years): <input type="number" name="age" id="age" min="13" max="120"></label>
+            <label for="referrer">How did you hear about us? <select name="reference" id="referrer">
+                    <option value="">(select one)</option>
+                    <option value="1">freeCodeCamp News</option>
+                    <option value="2">freeCodeCamp YouTube Channel</option>
+                    <option value="3">freeCodeCamp Forum</option>
+                    <option value="4">Other</option>
+                </select></label>
+            <label for="bio">Provide a bio: <textarea name="bio" id="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea></label>
+        </fieldset>
+        <a href="https://www.freecodecamp.org/news/terms-of-service/">Read our terms and conditions</a>
+        <label for="terms-and-conditions"><input class="inline" type="checkbox" name="terms" id="terms-and-conditions" required> I accept the terms and conditions</label>
+        <input type="submit" value="Submit" name="submit">
+    </form>
+</body>
+</html>

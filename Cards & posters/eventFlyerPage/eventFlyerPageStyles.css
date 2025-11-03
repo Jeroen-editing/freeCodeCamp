@@ -28,7 +28,7 @@ h1::first-letter {
 img {
     width: 20vw;
     min-width: 250px;
-    outline: 2px solid #cdaf13;
+    outline: 2px solid #cdaf13; 
 }
 section {
     width: 90%;

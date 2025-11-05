@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 24px;
+}
+.newspaper {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+.newspaper h1 {
+    text-align: center;
+}
+hr {
+    height: 4px;
+    margin: 14px auto 14px auto;
+    background: rgb(76, 76, 76);
+    border: none;
+}
+.sub-text {
+    font-size: .8em;
+    font-weight: 100;
+    text-align: left;
+}
+.sub-text sup {
+    font-size: .6em;
+}
+.colored-tab {
+    margin: 12px 0;
+    width: 170px;
+    padding: 5px 0 6px 0;
+    background: rgba(133, 135, 181, 0.2);
+    border-radius: 16px;
+}
+.colored-tab span {
+    margin-right: 6px;
+    padding: 5px 12px 6px 12px;
+    background: rgba(133, 135, 181, 0.2);
+    border-radius: 16px;
+}
+.bold-sub {
+    font-weight: 600;
+}
+.subheader, article {
+    width: 800px;
+    margin: 40px auto 0 auto;
+}
+.subheader h2 {
+    font-weight: 800;
+    letter-spacing: .19px;
+}
+img {
+    width: 800px;
+    margin: 20px auto 0 auto;
+}
+.rights-text {
+    font-size: .6em;
+}
+.big-text {
+    margin: 6px auto 20px auto;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-align: justify;
+}
+.plain-text {
+    margin: 10px 0 10px 0;
+    font-size: 1.2em;
+}
+q::before {
+    content: "";
+}
+q::after {
+    content: "";
+}
+blockquote {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 20px 0 20px 50px;
+    padding: 0 0 20px 20px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 255, 0.03);
+    border-left: 5px solid rgba(0, 0, 255, 0.5);    
+}
+blockquote .quote-sign {
+    width: 40px;
+    margin: 0 10px -30px 0;
+    color: blue;
+    font-size: 4em;
+    font-style: italic;
+}
+blockquote .quote {
+    font-size: 1.6em;
+}
+blockquote cite {
+    margin: 8px 0 0 50px;
+    color: #696969;
+    font-size: 1.2em;
+}
+.text-img {
+    margin-top: 40px;
+}
+.photo-text {
+    margin-top: 10px;
+    font-size: 1.1em;
+    letter-spacing: .1em;
+}

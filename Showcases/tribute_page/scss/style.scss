@@ -1,4 +1,4 @@
-$base_color: rgb(243, 231, 190);
+$base_color: #f3e7be;
 $text_color: rgb(50,50,50);
 
 $main_font: 'Nunito';
@@ -14,7 +14,7 @@ body, main {
     margin: 0 auto;
 }
 
-#title, .sub_title {
+.main_title, .sub_title {
     width: 100%;
     margin: 20px auto;
     padding: 18px 0;
@@ -22,31 +22,27 @@ body, main {
     font-family: $main_font, sans-serif;
     text-align: center;
     background: rgba($base_color, 0.28);
-
-    h1, h2 {
-        padding: 15px 0;
-    }
+    border-top: 1px solid rgba($base_color, 0.3);
+    border-bottom: 1px solid rgba($base_color, 0.3);
 
     h1 {
+        padding: 15px 0;
         font-size: 36px;
-        font-weight: 600;
+        font-weight: 800;
     }
-    h3 {
-        padding: 20px 0;
+    h2 {
+        padding: 10px 0;
         font-size: 22px;
         font-weight: 700;
     }
-    h4 {
-        font-size: 16px;
-        font-weight: 300;
+    h3 {
+        font-size: 20px;
+        font-weight: 700;
     }
 }
 #img-div {
     width: 100%;
     margin-top: 48px;
-}
-img {
-    display: block;
 }
 #image {
     display: block;
@@ -54,9 +50,7 @@ img {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 8px 0;
-    border-top: 1px solid rgba($text_color, 0.4);
-    border-bottom: 1px solid rgba($text_color, 0.4);
+    padding: 8px 0 18px 0;
 }
 #img-caption {
     display: block;
@@ -64,12 +58,14 @@ img {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 12px 0 4px 0;
+    padding: 10px 0 10px 0;
     color: $text_color;
     font-family: $second_font;
-    font-size: 15px;
-    font-weight: 200;
+    font-size: 16px;
+    font-weight: 300;
     text-align: center;
+    border-top: 1px solid rgba($text_color, 0.4);
+    border-bottom: 1px solid rgba($text_color, 0.4);
 }
 
 section {
@@ -88,24 +84,29 @@ section {
 .achieveList {
     ul {
         padding: 18px 0 22px 0;
-        list-style: url("../assets/square_light.png");
+        list-style-type: square;
 
         li {
             padding: 16px 0;
         }
+        li::marker {
+            color: #243c49;
+            font-size: 1.4em;
+        }
 
-        li h5, li p {
+        li h4, li p {
             display: inline;
             font-family: $main_font;
         }
-        li h5 {
+        li h4 {
             margin-right: 8px;
-            color: #3f687e;
-            font-size: 18px;
+            color: #243c49;
+            font-size: 20px;
             font-weight: 700;
+            letter-spacing: 1px;
         }
         li p {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 500;
         }
     }
@@ -120,12 +121,13 @@ section {
             color: $text_color;
             font-family: $main_font;
             text-align: center;
-            font-size: 12px;
-            font-weight: 700;
+            font-size: 16px;
+            font-weight: 500;
     
             #tribute-link {
                 color: rgb(79, 128, 201);
                 font-family: $main_font;
+                text-underline-offset: 6px;
             }
         }
     }
@@ -136,6 +138,7 @@ section {
     margin: 0 auto;
     padding: 16px 0;
     background: rgba($base_color, 0.4);
+    border-top: 1px solid rgba($base_color, 0.3);
 
     .quoteBox {
         width: 32%;
@@ -143,11 +146,20 @@ section {
 
         .quote, .quoteAuthor {
             padding: 14px 0;
-            font-style: italic;
             font-family: $second_font;
+            font-size: 18px;
+            font-style: italic;
         }
         .quote {
             border-bottom: 1px solid rgba($text_color, 0.4);
         }
+    }
+}
+q {
+    font-style: italic;
+
+    &::before,
+    &::after {
+        content: "";
     }
 }

@@ -9,88 +9,194 @@
     <!--Look for the og's og:title, og:description, og:image, og:url, og:type og:site_name og:locale-->
     <title>Newspaper Article</title>
     <link href="newspaperArticleStyles.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="newspaper">
         <header>
-            <h1>V.R.T. nws (online)*</h1>
+            <h1 class="name">V.R.T. nws*</h1>
             <hr>
-            <p class="sub-text colored-tab"><span>World news</span> Oceania</p>
+            <p class="colored-tab"><span>World news</span> Oceania</p>
         </header>
         <header class="subheader">
-            <h2>Victoria becomes the first Australian state to sign a treaty with its Indigenous population: "Historic moment for our people"</h2>
+            <h2 class="headline">
+                Victoria becomes the first Australian state to sign a treaty with its Indigenous population: 
+                <br>"Historic moment for our people"
+            </h2>
             <hr>
             <img src="https://images.vrt.be/vrtnws_web/2025/10/31/86b85212-fde1-4f84-b59c-12798f91039b.jpg?width=800&height=450" alt="">
             <p class="sub-text rights-text">Photo used for educational purposes only. &reg; Vrst nws</p>
             <hr>
-            <p class="big-text">
-                For the first time in Australian history, a state has entered into a formal treaty with its Indigenous people. In Victoria, 
-                where Melbourne is located, Aboriginal people will now have a say in policies that affect their lives. The state government 
-                calls it a historic step toward reconciliation and recognition of the injustices inflicted on Indigenous people for centuries.
+            <p class="sub-headline">
+                For the first time in Australian history, a state has entered into a formal treaty with its 
+                Indigenous people. In Victoria, where Melbourne is located, Aboriginal people will now have 
+                a say in policies that affect their lives. The state government calls it a historic step toward 
+                reconciliation and recognition of the injustices inflicted on Indigenous people for centuries.
             </p>
-            <p class="sub-text bold-sub">Mats Switsers</p>
-            <p class="sub-text"><sup>🕔</sup> friday 31 October, 2025 (12:48)</p>
+            <p class="author">Mats Switsers</p>
+            <p class="date"><sup>🕔</sup> friday 31 October, 2025 (12:48)</p>
         </header>
         <article>
-            <p class="plain-text">
-                After two days of debate, the Upper House of the Victorian Parliament passed the Treaty Bill by 21 votes to 16.
+            <p class="text">
+                After two days of debate, the Upper House of the Victorian Parliament passed the Treaty Bill 
+                by 21 votes to 16.
             </p>
-            <p class="plain-text">
+            <p class="text">
                 <q>
-                    "This treaty gives the Aboriginal community the power to shape the policies that affect their lives," says State Premier 
-                    Jacinta Allan. "This is how we build a fairer and stronger Victoria for everyone."
+                    "This treaty gives the Aboriginal community the power to shape the policies that affect 
+                    their lives," says State Premier Jacinta Allan. "This is how we build a fairer and stronger 
+                    Victoria for everyone."
                 </q>
             </p>
-            <p class="plain-text">
-                The local agreement comes two years after the national referendum on an Indigenous voice in the constitution failed. That 
-                referendum was about a constitutional amendment to recognize Aboriginal and Torres Strait Islander peoples as Australia's 
-                original inhabitants. Nearly 60 percent of the Australian population opposed the proposal at the time.
+            <p class="text">
+                The local agreement comes two years after the national referendum on an Indigenous voice in 
+                the constitution failed. That referendum was about a constitutional amendment to recognize 
+                Aboriginal and Torres Strait Islander peoples as Australia's original inhabitants. Nearly 60 
+                percent of the Australian population opposed the proposal at the time.
             </p>
             <blockquote>
                 <p class="quote-sign">&quot;</p>
-                <p class="quote">The treaty marks the beginning of a new era</p>
-                <cite>Ngarra Murray, co-chair of the First Peoples' Assembly</cite>
+                <div class="left-block">
+                    <p class="quote">The treaty marks the beginning of a new era</p>
+                    <p>Ngarra Murray, <cite>co-chair of the First Peoples' Assembly</cite></p>
+                </div>
             </blockquote>
-            <p class="plain-text">
-                Ngarra Murray, co-chair of the First Peoples' Assembly, therefore calls the treaty "a historic moment for our people." 
-                "We will tell our children about this day, and they will tell their children, and pass on to future generations the story 
-                of how decades of Aboriginal resilience and activism led to Australia's first treaty."
+            <p class="text">
+                Ngarra Murray, co-chair of the First Peoples' Assembly, therefore calls the treaty "a historic 
+                moment for our people." "We will tell our children about this day, and they will tell their 
+                children, and pass on to future generations the story of how decades of Aboriginal resilience 
+                and activism led to Australia's first treaty."
             </p>
+            <hr class="top-hr">
             <img class="text-img" src="https://images.vrt.be/vrtnws_web/2025/10/31/45fe19fe-9885-4d81-9d1f-da87d2f328ed.jpg?width=800&height=450" alt="">
-            <p class="sub-text rights-text">Photo used for educational purposes only. &reg; Vrst nws</p>
+            <p class="rights-text">Photo used for educational purposes only. &reg; Vrst nws</p>
             <p class="photo-text">
-                Ngarra Murray speaks at the ceremonial opening of the treaty negotiations in Darebin Parklands in 2024.
+                Ngarra Murray speaks at the ceremonial opening of the treaty negotiations in Darebin Parklands 
+                in 2024.
             </p>
-            <hr>
-            <p class="plain-text">
+            <hr class="bottom-hr">
+            <p class="text">
                 After <a href="https://www.vrt.be/vrtnws/nl/2023/10/14/australie-referendum-verworpen/">the proposal was rejected at the national level</a>,
-                 Indigenous people continued to campaign for greater 
-                recognition of their initiatives. It took over 10 years to finally implement the treaty in Victoria.
+                Indigenous people continued to campaign for greater recognition of their initiatives. 
+                It took over 10 years to finally implement the treaty in Victoria.
             </p>
-            <p class="plain-text">
-                "The treaty marks the beginning of a new era, one in which the 60,000 years of knowledge and culture of First Peoples are respected and 
-                celebrated. It is an opportunity for all Victorians to acknowledge our shared history, heal, and move forward together," Murray said.
+            <p class="text">
+                "The treaty marks the beginning of a new era, one in which the 60,000 years of knowledge and 
+                culture of First Peoples are respected and celebrated. It is an opportunity for all Victorians 
+                to acknowledge our shared history, heal, and move forward together," Murray said.
             </p>
             <details open>
                 <summary>Inequality in Australia:</summary>
-                <p>
-                    The gap between Indigenous people and the rest of Australia is deep and has grown historically. Aboriginal and Torres Strait Islander 
-                    people make up approximately 3.8 percent of the population, but fare worse than other Australians in almost every way. They live an 
-                    average of nine years less, commit suicide twice as often, and are significantly overrepresented in prisons.
+                <p class="text">
+                    The gap between Indigenous people and the rest of Australia is deep and has grown 
+                    historically. Aboriginal and Torres Strait Islander people make up approximately 
+                    3.8 percent of the population, but fare worse than other Australians in almost 
+                    every way. They live an average of nine years less, commit suicide twice as often, 
+                    and are significantly overrepresented in prisons.
                 </p>
-                <p>
-                    This inequality has its roots in Australia's violent colonial past. When the country was incorporated as a penal colony by the 
-                    British Crown in 1788, the Indigenous population was expelled, poisoned, and murdered. The "White Australia" policy, which 
+                <p class="text">
+                    This inequality has its roots in Australia's violent colonial past. When the country 
+                    was incorporated as a penal colony by the British Crown in 1788, the Indigenous 
+                    population was expelled, poisoned, and murdered. The "White Australia" policy, which 
                     systematically removed Indigenous children from their parents, persisted until the 1970s.
                 </p>
-                <p>
-                    For decades, the atrocities and traumas of colonization were ignored or concealed. That history still leaves deep scars: many 
-                    Aboriginal people still struggle with marginalization, poverty, and racism. The new treaty should help finally close that gap.
+                <p class="text">
+                    For decades, the atrocities and traumas of colonization were ignored or concealed. 
+                    That history still leaves deep scars: many Aboriginal people still struggle with 
+                    marginalization, poverty, and racism. The new treaty should help finally close that gap.
                 </p>
-                <img src="https://images.vrt.be/vrtnws_web/2025/10/31/8cf7b754-4763-4948-b919-a45219611c72.jpg?width=800&height=450" alt="">
             </details>
         </article>
+        <article>
+            <h3>What exactly does the treaty entail?</h3>
+            <p class="text">
+                Part of the treaty is the continuation of the work of the Yoorrook Commission, which has 
+                been engaged in fact-finding in recent years. This commission, whose name refers to the 
+                word "truth" in the Wemba Wemba language, states, among other things, that during the 
+                colonization of Victoria, over three-quarters of the Indigenous population was killed 
+                in the 20 years. The commission therefore concludes irrefutably that genocide was 
+                committed against the Indigenous population.
+            </p>
+            <p class="text">
+                In addition, the treaty establishes a new democratic body. This body, to be called the 
+                Gellung Warl Commission, will henceforth be consulted on laws and policies affecting 
+                Aboriginal and Torres Strait Islander peoples.
+            </p>
+            <p class="text">
+                In this way, the commission will ensure that the government meets its obligations to 
+                close the gap between Indigenous and white Australians.
+            </p>
+            <hr class="top-hr">
+            <img src="https://images.vrt.be/vrtnws_web/2025/10/31/8cf7b754-4763-4948-b919-a45219611c72.jpg?width=800&height=450" alt="">
+            <p class="rights-text">Photo used for educational purposes only. &reg; Vrst nws</p>
+            <p class="photo-text">
+                A girl holds an Aboriginal flag during an Indigenous Australian protest on Australia 
+                Day in Sydney.
+            </p>
+            <hr class="bottom-hr">
+            <p class="text">
+                One concrete consequence of the treaty agreement is a revision of the school curriculum. 
+                The updated curriculum should offer children insight into the dark chapters of Indigenous 
+                Australian history. The Victorian state government will also formally apologize to the 
+                country's Indigenous people.
+            </p>
+            <p class="text">
+                What remains unclear, however, is the price tag for implementing the treaty. It's 
+                estimated that the new initiatives will likely cost tens of millions of dollars annually.
+            </p>
+            <p class="text">
+                The local opposition is already strongly opposed to the agreement and has promised to 
+                immediately scrap the proposal if it comes to power. The new state elections at the end 
+                of 2026 could therefore once again sweep the reforms aside.
+            </p>
+            <h3>Pioneer Victoria</h3>
+            <p class="text">
+                With this step, Victoria becomes the first Australian state to adopt Voice, Treaty, 
+                and Truth. 
+                <a href="https://www.vrt.be/vrtnws/nl/2023/10/12/australie-aboriginals-referendum/">
+                    These are the three pillars of reform outlined in the 2017 Uluru Statement from 
+                    the Heart, a groundbreaking document drafted by Indigenous leaders calling for legal 
+                    recognition.
+                </a>
+            </p>
+            <blockquote>
+                <p class="quote-sign">&quot;</p>
+                <div class="left-block">
+                    <p class="quote">
+                        We can show the rest of Australia that this isn't something to be 
+                        afraid of. In fact, it will bring us closer together.
+                    </p>
+                    <p>Jill Gallagher, <cite>Chief Executive of Victoria's Local Health Board</cite></p>
+                </div>
+            </blockquote>
+            <p class="text">
+                Jill Gallagher, chief executive of Victoria's Aboriginal Health Board, told the ABC 
+                public broadcaster she hopes this will be an example for other parts of the country.
+            </p>
+            <p class="text">
+                <q>
+                    "We can show the rest of Australia that this is nothing to be afraid of. 
+                    In fact, it will bring us closer together."
+                </q>
+            </p>
+            <p class="text">
+                The reconciliation process appears to be making significant progress. A growing 
+                number of states are actively pursuing similar initiatives. For example, a commission 
+                has been established in South Australia to represent the voice of the local Indigenous 
+                population.
+            </p>
+        </article>
+        <footer>
+            <hr class="small-hr">
+            <p class="source">
+                * &reg; <a href=https://www.vrt.be/vrtnws/nl/2025/10/31/eerste-verdrag-in-australie-met-inheemse-bevolking-aangenomen-in/">
+                The original article</a> comes from the <a href="https://www.vrt.be/vrtnws/en/">'V.R.T nws'-website</a> 
+                (Flanders, Belgium). Used for educational purposes only. No text was altered.
+            </p>
+        </footer>
     </div>
 </body>
 </html>

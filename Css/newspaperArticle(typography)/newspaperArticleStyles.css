@@ -13,27 +13,32 @@ html {
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
 }
-.newspaper h1 {
+.name {
+    font-family: 'Times New Roman', serif;
+    font-size: 2.2em;
     text-align: center;
+    text-transform: uppercase;
 }
 hr {
     height: 4px;
-    margin: 14px auto 14px auto;
+    margin: 14px auto 10px auto;
     background: rgb(76, 76, 76);
     border: none;
 }
-.sub-text {
+.date {
     font-size: .8em;
     font-weight: 100;
     text-align: left;
 }
-.sub-text sup {
+.date sup {
     font-size: .6em;
 }
 .colored-tab {
     margin: 12px 0;
     width: 170px;
     padding: 5px 0 6px 0;
+    font-size: .8em;
+    font-weight: 400;
     background: rgba(133, 135, 181, 0.2);
     border-radius: 16px;
 }
@@ -43,32 +48,47 @@ hr {
     background: rgba(133, 135, 181, 0.2);
     border-radius: 16px;
 }
-.bold-sub {
-    font-weight: 600;
+.author {
+    font-size: .9em;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 .subheader, article {
     width: 800px;
     margin: 40px auto 0 auto;
 }
-.subheader h2 {
+.headline {
+    width: 800px;
+    margin: 40px auto 0 auto;
+    font-size: 2em;
     font-weight: 800;
-    letter-spacing: .19px;
+    letter-spacing: .95px;
 }
 img {
     width: 800px;
-    margin: 20px auto 0 auto;
+    margin: 10px auto 0 auto;
 }
 .rights-text {
+    width: 800px;
+    margin: 0 auto;
     font-size: .6em;
+    font-weight: 100;
+    text-align: left;
 }
-.big-text {
+.sub-headline {
+    width: 800px;
     margin: 6px auto 20px auto;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 600;
     text-align: justify;
 }
-.plain-text {
-    margin: 10px 0 10px 0;
+.text::first-letter {
+    margin-right: 1px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.text, details p {
+    margin: 20px 0;
     font-size: 1.2em;
 }
 q::before {
@@ -80,34 +100,82 @@ q::after {
 blockquote {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    margin: 20px 0 20px 50px;
-    padding: 0 0 20px 20px;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin: 40px 0;
+    padding: 0 0;
     font-weight: 600;
-    background-color: rgba(0, 0, 255, 0.03);
-    border-left: 5px solid rgba(0, 0, 255, 0.5);    
+    background-color: rgba(0, 0, 255, 0.01);   
+    border-top: 2px solid rgba(0, 0, 255, 0.05);
+    border-bottom: 2px solid rgba(0, 0, 255, 0.05);
 }
 blockquote .quote-sign {
-    width: 40px;
-    margin: 0 10px -30px 0;
+    width: 70px;
+    height: 60px;
+    margin: -30px 10px 0 30px;
     color: blue;
-    font-size: 4em;
+    font-family: Charm, sans-serif;
+    font-size: 10em;
     font-style: italic;
+    transform: rotateY(150deg);
+}
+.left-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 95%;
+    margin-left: -10px;
+    padding: 22px 10px 16px 0;
 }
 blockquote .quote {
-    font-size: 1.6em;
+    font-size: 1.5em;
 }
 blockquote cite {
-    margin: 8px 0 0 50px;
+    margin: 8px 0 0 0;
     color: #696969;
     font-size: 1.2em;
-}
-.text-img {
-    margin-top: 40px;
 }
 .photo-text {
     margin-top: 10px;
     font-size: 1.1em;
     letter-spacing: .1em;
+}
+.top-hr {
+    margin-top: 50px;
+}
+.bottom-hr {
+    margin-bottom: 40px;
+}
+details {
+    margin: 40px 0 40px 40px;
+    padding: 40px 40px;
+    background-color: rgba(0, 0, 255, 0.03);
+    border-left: 5px solid rgba(0, 0, 255, 0.5); 
+}
+details summary {
+    margin-bottom: 30px;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+details .text {
+    text-align: justify;
+    letter-spacing: 1px;
+}
+details summary::marker {
+    content: "";
+}
+h3 {
+    margin-top: 60px;
+    font-size: 1.6em;
+}
+.small-hr {
+    margin-top: 60px;
+    height: 1px;
+}
+.source {
+    width: 800px;
+    margin: 0 auto 20px auto;
+    font-family: 'Times New Roman', serif;
+    font-size: .85em;
 }

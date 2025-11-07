@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<script src="" defer></script>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Give a summary about your website in teh meta:description content attr-->
+    <meta name="description" content="HTML and CSS quiz">
+    <!--Look for the og's og:title, og:description, og:image, og:url, og:type og:site_name og:locale-->
+    <title>HTML and CSS Quiz</title>
+    <link href="quizWebpageStyles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp">
+        <h1>HTML/CSS Quiz</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#student-inf">INFO</a>
+                </li>
+                <li>
+                    <a href="#html-questions">HTML</a>
+                </li>
+                <li>
+                    <a href="#css-questions">CSS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info">Student Info</h2>
+                <div class="info">
+                    <label for="student-name">Your name: </label><input id="student-name" type="text" name="fullname">
+                </div>
+                <div class="info">
+                    <label for="student-mail">Your email: </label><input id="student-mail" type="email" name="mail">
+                </div>
+                <div class="info">
+                    <label for="student-birthday">Your birthday: </label><input id="student-birthday" type="date" name="birthday">
+                </div>
+            </section>
+            <section role="region" aria-labelledby="html-questions">
+                <h2 id="html-questions">HTML questions</h2>
+                <div class="question-block">
+                    <h3><span class="sr-only">Question</span>1</h3>
+                    <fieldset class="question" name="emphazised-question">
+                        <legend>The correct HTML element for emphasized text is: &lt;i&gt;</i>?</legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="q1-a1">
+                                    <input type="radio" name="emphazised-answer" id="q1-a1" value="true">
+                                    True
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q1-a2">
+                                    <input type="radio" name="emphazised-answer" id="q1-a2" value="false">
+                                    False
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <h3><span class="sr-only">Question</span>2</h3>
+                    <fieldset class="question" name="iframe-question">
+                        <legend>An &lt;iframe&gt; is used to display a web page within a web page?</legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="q2-a1">
+                                    <input type="radio" name="iframe-answer" id="q2-a1" value="true">
+                                    True
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q2-a2">
+                                    <input type="radio" name="iframe-answer" id="q2-a2" value="false">
+                                    False
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </section>
+            <section role="region" aria-labelledby="css-questions">
+                <h2 id="css-questions">CSS questions</h2>
+                <div class="formrow">
+                    <h3><span class="sr-only">Question</span>1</h3>
+                    <div class="question-block">
+                        <label for="css-q1-a1">
+                            font-name: Is the correct CSS syntax to change the font name?
+                        </label>
+                    </div>
+                    <div class="answer">
+                        <select name="css-q1-a1" id="css-q1-a1" required>
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <h3><span class="sr-only">Question</span>1</h3>
+                    <div class="question-block">
+                        <label for="css-q1-a2">
+                            What is the correct way (syntax) to make an unordered list whit squared markers?
+                        </label>
+                    </div>
+                    <div class="answer">
+                        <textarea name="css-q1-a2" id="css-q1-a2" rows="4" cols="32"></textarea>
+                    </div>
+                </div>
+            </section>
+            <button type="submit">Send</button>
+        </form>
+    </main>
+    <footer>
+        <address>
+            <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+            San Francisco<br />
+            California<br />
+            USA
+        </address>
+    </footer>
+</body>
+</html>

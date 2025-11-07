@@ -1,38 +1,43 @@
 * {
   margin: 0 0;
-  padding: 0 0; }
+  padding: 0 0;
+}
 
 body, main {
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
-#title, .sub_title {
+.main_title, .sub_title {
   width: 100%;
   margin: 20px auto;
   padding: 18px 0;
-  color: #323232;
+  color: rgb(50, 50, 50);
   font-family: "Nunito", sans-serif;
   text-align: center;
-  background: rgba(243, 231, 190, 0.28); }
-  #title h1, #title h2, .sub_title h1, .sub_title h2 {
-    padding: 15px 0; }
-  #title h1, .sub_title h1 {
-    font-size: 36px;
-    font-weight: 600; }
-  #title h3, .sub_title h3 {
-    padding: 20px 0;
-    font-size: 22px;
-    font-weight: 700; }
-  #title h4, .sub_title h4 {
-    font-size: 16px;
-    font-weight: 300; }
+  background: rgba(243, 231, 190, 0.28);
+  border-top: 1px solid rgba(243, 231, 190, 0.3);
+  border-bottom: 1px solid rgba(243, 231, 190, 0.3);
+}
+.main_title h1, .sub_title h1 {
+  padding: 15px 0;
+  font-size: 36px;
+  font-weight: 800;
+}
+.main_title h2, .sub_title h2 {
+  padding: 10px 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+.main_title h3, .sub_title h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
 
 #img-div {
   width: 100%;
-  margin-top: 48px; }
-
-img {
-  display: block; }
+  margin-top: 48px;
+}
 
 #image {
   display: block;
@@ -40,9 +45,8 @@ img {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  padding: 8px 0;
-  border-top: 1px solid rgba(50, 50, 50, 0.4);
-  border-bottom: 1px solid rgba(50, 50, 50, 0.4); }
+  padding: 8px 0 18px 0;
+}
 
 #img-caption {
   display: block;
@@ -50,67 +54,100 @@ img {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  padding: 12px 0 4px 0;
-  color: #323232;
+  padding: 10px 0 10px 0;
+  color: rgb(50, 50, 50);
   font-family: "MuseoModerno";
-  font-size: 15px;
-  font-weight: 200;
-  text-align: center; }
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  border-top: 1px solid rgba(50, 50, 50, 0.4);
+  border-bottom: 1px solid rgba(50, 50, 50, 0.4);
+}
 
 section {
-  background: rgba(243, 231, 190, 0.24); }
+  background: rgba(243, 231, 190, 0.24);
+}
 
 #tribute-info {
-  width: 100%; }
-  #tribute-info .achieveList {
-    width: 32%;
-    margin: 0 auto; }
+  width: 100%;
+}
+#tribute-info .achieveList {
+  width: 32%;
+  margin: 0 auto;
+}
 
 .achieveList ul {
   padding: 18px 0 22px 0;
-  list-style: url("../assets/square_light.png"); }
-  .achieveList ul li {
-    padding: 16px 0; }
-  .achieveList ul li h5, .achieveList ul li p {
-    display: inline;
-    font-family: "Nunito"; }
-  .achieveList ul li h5 {
-    margin-right: 8px;
-    color: #3f687e;
-    font-size: 18px;
-    font-weight: 700; }
-  .achieveList ul li p {
-    font-size: 16px;
-    font-weight: 500; }
+  list-style-type: square;
+}
+.achieveList ul li {
+  padding: 16px 0;
+}
+.achieveList ul li::marker {
+  color: #243c49;
+  font-size: 1.4em;
+}
+.achieveList ul li h4, .achieveList ul li p {
+  display: inline;
+  font-family: "Nunito";
+}
+.achieveList ul li h4 {
+  margin-right: 8px;
+  color: #243c49;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.achieveList ul li p {
+  font-size: 18px;
+  font-weight: 500;
+}
 .achieveList #link-footer {
   width: 100%;
-  padding: 26px 0 16px 0; }
-  .achieveList #link-footer h5 {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    color: #323232;
-    font-family: "Nunito";
-    text-align: center;
-    font-size: 12px;
-    font-weight: 700; }
-    .achieveList #link-footer h5 #tribute-link {
-      color: #4f80c9;
-      font-family: "Nunito"; }
+  padding: 26px 0 16px 0;
+}
+.achieveList #link-footer h5 {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  color: rgb(50, 50, 50);
+  font-family: "Nunito";
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+.achieveList #link-footer h5 #tribute-link {
+  color: rgb(79, 128, 201);
+  font-family: "Nunito";
+  text-underline-offset: 6px;
+}
 
 .listFooter {
   width: 100%;
   margin: 0 auto;
   padding: 16px 0;
-  background: rgba(243, 231, 190, 0.4); }
-  .listFooter .quoteBox {
-    width: 32%;
-    margin: 0 auto; }
-    .listFooter .quoteBox .quote, .listFooter .quoteBox .quoteAuthor {
-      padding: 14px 0;
-      font-style: italic;
-      font-family: "MuseoModerno"; }
-    .listFooter .quoteBox .quote {
-      border-bottom: 1px solid rgba(50, 50, 50, 0.4); }
+  background: rgba(243, 231, 190, 0.4);
+  border-top: 1px solid rgba(243, 231, 190, 0.3);
+}
+.listFooter .quoteBox {
+  width: 32%;
+  margin: 0 auto;
+}
+.listFooter .quoteBox .quote, .listFooter .quoteBox .quoteAuthor {
+  padding: 14px 0;
+  font-family: "MuseoModerno";
+  font-size: 18px;
+  font-style: italic;
+}
+.listFooter .quoteBox .quote {
+  border-bottom: 1px solid rgba(50, 50, 50, 0.4);
+}
+
+q {
+  font-style: italic;
+}
+q::before, q::after {
+  content: "";
+}
 
 /*# sourceMappingURL=stylesheet.css.map */
